@@ -1,0 +1,1005 @@
+1. IA Reports, Notifications & Alerts (Image 1)
+
+Table: rapports_ia
+
+id: char(36) [PK]
+
+type_rapport: enum(QUOTIDIEN, HEBDOMADAIRE, MENSUEL, INCIDENT) [NN]
+
+periode_debut: datetime [NN]
+
+periode_fin: datetime [NN]
+
+destinataires: json [NN]
+
+statistiques: json [NN]
+
+divergences_count: int
+
+erreurs_count: int
+
+taux_precision: decimal(5,2)
+
+fichier_rapport_url: varchar(500)
+
+statut: enum(GENERE, ENVOYE)
+
+created_at: datetime
+
+sent_at: datetime
+
+Table: notifications
+
+id: char(36) [PK]
+
+user_id: char(36) [NN]
+
+titre: varchar(255) [NN]
+
+contenu: text [NN]
+
+type: enum(EMAIL, SMS, PUSH, PLATEFORME) [NN]
+
+categorie: enum(PUBLICATION, DEPOT, OUVERTURE, EVALUATION, ATTRIBUTION, RECOURS, SYSTEME, IA_DIVERGENCE, IA_ERREUR) [NN]
+
+is_lue: boolean
+
+date_envoi: datetime
+
+date_lecture: datetime
+
+Table: alertes_ia
+
+id: char(36) [PK]
+
+incident_id: char(36) [NN]
+
+utilisateurs_cibles: json [NN]
+
+titre: varchar(255) [NN]
+
+message: text [NN]
+
+niveau_urgence: enum(INFO, WARNING, ERROR, CRITICAL) [NN]
+
+type_alerte: enum(DIVERGENCE_GRE_A_GRE, DIVERGENCE_EVALUATION, CONFIANCE_FAIBLE, ERREUR_MODELE) [NN]
+
+donnees_contexte: json
+
+statut: enum(ENVOYEE, ACQUITTEE, RESOLUE)
+
+date_creation: datetime [NN]
+
+date_acquittement: datetime
+
+acquittee_par: char(36)
+
+2. Documents & OCR (Image 2)
+
+Table: pieces_administratives
+
+id: char(36) [PK]
+
+soumission_id: char(36) [NN]
+
+document_id: char(36) [NN] -> FK to documents.id
+
+type: enum(NIF, NIS, REGISTRE_COMMERCE, CASIER_JUDICIAIRE, CNAS, CASNOS, ATTESTATION_FISCALE, BILAN, AUTRE) [NN]
+
+designation: varchar(255)
+
+is_valide: boolean
+
+date_expiration: datetime
+
+created_at: datetime
+
+Table: documents
+
+id: char(36) [PK]
+
+owner_id: char(36) [NN]
+
+owner_type: enum(USER, ORGANISATION) [NN]
+
+nom: varchar(255) [NN]
+
+type_mime: varchar(100) [NN]
+
+taille_octets: bigint
+
+fichier_url: varchar(500) [NN]
+
+hash_sha256: varchar(64) [NN]
+
+created_at: datetime
+
+Table: ocr_analyses
+
+id: char(36) [PK]
+
+document_id: char(36) [NN] -> FK to documents.id
+
+piece_id: char(36) -> FK to pieces_administratives.id
+
+type_analyse: enum(OCR, NLP, COMPLETUDE) [NN]
+
+texte_extrait: text
+
+score_confiance: decimal(5,4)
+
+is_conforme: boolean
+
+anomalies: text
+
+analysed_at: datetime
+
+3. Commissions & Openings (Image 3)
+
+Table: membres
+
+id: char(36) [PK]
+
+commission_id: char(36) [NN] -> FK to commissions.id
+
+user_id: char(36) [NN]
+
+role: enum(PRESIDENT, MEMBRE, RAPPORTEUR) [NN]
+
+date_designation: datetime
+
+Table: commissions
+
+id: char(36) [PK]
+
+appel_offre_id: char(36)
+
+type: enum(EVALUATION, MARCHE) [NN]
+
+designation: varchar(255) [NN]
+
+niveau: varchar(50)
+
+statut: enum(CONSTITUEE, ACTIVE, DISSOUTE)
+
+date_constitution: datetime
+
+created_at: datetime
+
+Table: seances_ouverture
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN]
+
+commission_id: char(36) [NN] -> FK to commissions.id
+
+type: enum(OFFRE_TECHNIQUE, OFFRE_FINANCIERE) [NN]
+
+date_seance: datetime [NN]
+
+lieu: varchar(255)
+
+statut: enum(PROGRAMMEE, EN_COURS, TERMINEE)
+
+is_publique: boolean
+
+pv_url: varchar(500)
+
+created_at: datetime
+
+Table: resultats_ouverture
+
+id: char(36) [PK]
+
+seance_id: char(36) [NN] -> FK to seances_ouverture.id
+
+soumission_id: char(36) [NN]
+
+pli_recu: boolean
+
+pli_conforme: boolean
+
+observations: text
+
+created_at: datetime
+
+4. Tenders (Appels d'Offres) & Contracts (Image 4)
+
+Table: appels_offres
+
+id: char(36) [PK]
+
+service_contractant_id: char(36) [NN]
+
+reference: varchar(50) [NN]
+
+objet: varchar(500) [NN]
+
+description: text
+
+type_appel: enum(OUVERT, RESTREINT, GRE_A_GRE, CONSULTATION) [NN]
+
+type_marche: enum(TRAVAUX, FOURNITURES, SERVICES, ETUDES) [NN]
+
+statut: enum(BROUILLON, PUBLIE, EN_COURS, OUVERTURE_PLIS, EVALUATION, ATTRIBUE, ANNULE, INFRUCTUEUX)
+
+montant_estime: decimal(15,2)
+
+wilaya_execution: varchar(100)
+
+date_publication: datetime
+
+date_limite_retrait_cdc: datetime
+
+date_limite_depot: datetime
+
+date_ouverture_plis: datetime
+
+delai_execution_jours: int
+
+caution_requise: boolean
+
+montant_caution: decimal(15,2)
+
+created_at: datetime
+
+updated_at: datetime
+
+Table: lots
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN] -> FK to appels_offres.id
+
+numero: int [NN]
+
+designation: varchar(255) [NN]
+
+description: text
+
+montant_estime: decimal(15,2)
+
+delai_execution_jours: int
+
+created_at: datetime
+
+Table: cahiers_des_charges
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN] -> FK to appels_offres.id
+
+titre: varchar(255) [NN]
+
+fichier_url: varchar(500) [NN]
+
+version: varchar(20)
+
+prix_retrait: decimal(10,2)
+
+is_published: boolean
+
+created_at: datetime
+
+updated_at: datetime
+
+Table: criteres_eligibilite
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN] -> FK to appels_offres.id
+
+designation: varchar(255) [NN]
+
+description: text
+
+is_eliminatoire: boolean
+
+ordre: int [NN]
+
+created_at: datetime
+
+Table: avis
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN] -> FK to appels_offres.id
+
+type: enum(APPEL_OFFRE, ATTRIBUTION_PROVISOIRE, ATTRIBUTION_DEFINITIVE, ANNULATION, INFRUCTUOSITE, RECTIFICATIF) [NN]
+
+titre: varchar(255) [NN]
+
+contenu: text
+
+support: enum(BOMOP, PRESSE, PLATEFORME) [NN]
+
+date_publication: datetime
+
+date_fin_publication: datetime
+
+is_published: boolean
+
+created_at: datetime
+
+Table: attributions_provisoires
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN] -> FK to appels_offres.id
+
+soumission_id: char(36) [NN]
+
+commission_id: char(36) [NN]
+
+montant_attribue: decimal(15,2) [NN]
+
+motif: text
+
+date_attribution: datetime [NN]
+
+date_fin_recours: datetime
+
+statut: enum(PUBLIEE, EN_RECOURS, CONFIRMEE, ANNULEE)
+
+created_at: datetime
+
+Table: demandes_gre_a_gre
+
+id: char(36) [PK]
+
+service_contractant_id: char(36) [NN]
+
+reference: varchar(50) [NN]
+
+objet: varchar(500) [NN]
+
+description: text
+
+montant_estime: decimal(15,2)
+
+statut: enum(BROUILLON, SOUMISE, EN_ANALYSE_IA, ACCEPTEE, REJETEE, EN_REVISION)
+
+created_at: datetime
+
+updated_at: datetime
+
+Table: attributions_definitives
+
+id: char(36) [PK]
+
+attribution_provisoire_id: char(36) [NN] -> FK to attributions_provisoires.id
+
+appel_offre_id: char(36) [NN] -> FK to appels_offres.id
+
+soumission_id: char(36) [NN]
+
+date_attribution: datetime [NN]
+
+statut: enum(ATTRIBUEE, SIGNEE, ANNULEE)
+
+created_at: datetime
+
+Table: criteres_evaluation
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN] -> FK to appels_offres.id
+
+lot_id: char(36) -> FK to lots.id
+
+designation: varchar(255) [NN]
+
+type: enum(TECHNIQUE, FINANCIER) [NN]
+
+ponderation: decimal(5,2) [NN]
+
+note_eliminatoire: decimal(5,2)
+
+ordre: int [NN]
+
+created_at: datetime
+
+Table: evaluations_ia_gre_a_gre
+
+id: char(36) [PK]
+
+demande_id: char(36) [NN] -> FK to demandes_gre_a_gre.id
+
+modele_ia: varchar(100) [NN]
+
+score_conformite: decimal(5,2) [NN]
+
+recommandation: enum(ACCEPTER, REJETER, DEMANDER_COMPLEMENTS) [NN]
+
+justification_ia: text [NN]
+
+criteres_analyses: json
+
+confiance_score: decimal(5,2)
+
+date_analyse: datetime [NN]
+
+created_at: datetime
+
+Table: decisions_gre_a_gre
+
+id: char(36) [PK]
+
+demande_id: char(36) [NN] -> FK to demandes_gre_a_gre.id
+
+evaluation_ia_id: char(36) -> FK to evaluations_ia_gre_a_gre.id
+
+controleur_id: char(36) [NN]
+
+decision_finale: enum(ACCEPTER, REJETER, DEMANDER_COMPLEMENTS) [NN]
+
+motif_decision: text [NN]
+
+correspond_ia: boolean [NN]
+
+date_decision: datetime [NN]
+
+created_at: datetime
+
+Table: justifications_gre_a_gre
+
+id: char(36) [PK]
+
+demande_id: char(36) [NN] -> FK to demandes_gre_a_gre.id
+
+type_justification: enum(URGENCE, TECHNIQUE, ECONOMIQUE, JURIDIQUE, AUTRE) [NN]
+
+description: text [NN]
+
+fichier_url: varchar(500)
+
+ordre: int
+
+created_at: datetime
+
+Table: marches
+
+id: char(36) [PK]
+
+attribution_definitive_id: char(36) [NN] -> FK to attributions_definitives.id
+
+appel_offre_id: char(36) [NN] -> FK to appels_offres.id
+
+service_contractant_id: char(36) [NN]
+
+operateur_economique_id: char(36) [NN]
+
+reference: varchar(50) [NN]
+
+objet: varchar(500) [NN]
+
+montant_global: decimal(15,2) [NN]
+
+date_signature: datetime
+
+delai_execution_jours: int [NN]
+
+date_fin_prevue: datetime
+
+statut: enum(EN_COURS, TERMINE, RESILIE)
+
+created_at: datetime
+
+updated_at: datetime
+
+5. Appeals (Image 5)
+
+Table: recours
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN]
+
+operateur_id: char(36) [NN]
+
+attribution_provisoire_id: char(36) [NN]
+
+reference: varchar(50) [NN]
+
+motif: text [NN]
+
+pieces_jointes_url: text
+
+date_depot: datetime [NN]
+
+date_limite_reponse: datetime [NN]
+
+statut: enum(DEPOSE, EN_EXAMEN, ACCEPTE, REJETE)
+
+decision: text
+
+motif_decision: text
+
+date_decision: datetime
+
+created_at: datetime
+
+6. Evaluations & Scoring (Image 6)
+
+Table: notes
+
+id: char(36) [PK]
+
+evaluation_id: char(36) [NN] -> FK to evaluations.id
+
+soumission_id: char(36) [NN]
+
+critere_id: char(36) [NN]
+
+evaluateur_id: char(36) [NN]
+
+note: decimal(5,2) [NN]
+
+justification: text
+
+created_at: datetime
+
+Table: scores_ia
+
+id: char(36) [PK]
+
+evaluation_ia_id: char(36) [NN] -> FK to evaluations_ia.id
+
+score_technique: decimal(5,2)
+
+score_financier: decimal(5,2)
+
+score_global: decimal(5,2)
+
+classement_suggere: int
+
+recommandation: enum(RETENIR, ELIMINER, ANALYSER_PLUS) [NN]
+
+motif_recommandation: text
+
+calculated_at: datetime
+
+Table: scores
+
+id: char(36) [PK]
+
+evaluation_id: char(36) [NN] -> FK to evaluations.id
+
+soumission_id: char(36) [NN]
+
+score_technique: decimal(5,2)
+
+score_financier: decimal(5,2)
+
+score_global: decimal(5,2)
+
+classement: int
+
+is_retenu: boolean
+
+is_elimine: boolean
+
+motif_elimination: varchar(500)
+
+calculated_at: datetime
+
+Table: evaluations
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN]
+
+commission_id: char(36) [NN]
+
+phase: enum(ELIGIBILITE, TECHNIQUE, FINANCIERE) [NN]
+
+statut: enum(EN_COURS, TERMINEE, VALIDEE)
+
+rapport_url: varchar(500)
+
+date_debut: datetime
+
+date_fin: datetime
+
+created_at: datetime
+
+Table: evaluations_ia
+
+id: char(36) [PK]
+
+evaluation_id: char(36) [NN] -> FK to evaluations.id
+
+soumission_id: char(36) [NN]
+
+modele_ia: varchar(100) [NN]
+
+phase: enum(ELIGIBILITE, TECHNIQUE, FINANCIERE) [NN]
+
+statut: enum(EN_COURS, TERMINEE, ERREUR)
+
+created_at: datetime
+
+completed_at: datetime
+
+Table: comparaisons_decisions
+
+id: char(36) [PK]
+
+evaluation_id: char(36) [NN] -> FK to evaluations.id
+
+soumission_id: char(36) [NN]
+
+score_commission: decimal(5,2)
+
+score_ia: decimal(5,2)
+
+decision_commission: enum(RETENIR, ELIMINER) [NN]
+
+recommandation_ia: enum(RETENIR, ELIMINER, ANALYSER_PLUS) [NN]
+
+correspond: boolean
+
+ecart_score: decimal(5,2)
+
+motif_divergence: text
+
+created_at: datetime
+
+Table: notes_ia
+
+id: char(36) [PK]
+
+evaluation_ia_id: char(36) [NN] -> FK to evaluations_ia.id
+
+critere_id: char(36) [NN]
+
+note: decimal(5,2) [NN]
+
+justification: text [NN]
+
+confiance_score: decimal(5,2)
+
+elements_analyses: json
+
+created_at: datetime
+
+7. Organizations, Roles & Profiles (Image 7)
+
+Table: organisations
+
+id: char(36) [PK]
+
+denomination: varchar(255) [NN]
+
+nif: varchar(50)
+
+nis: varchar(50)
+
+registre_commerce: varchar(100)
+
+adresse: text
+
+wilaya: varchar(100)
+
+commune: varchar(100)
+
+telephone: varchar(20)
+
+email: varchar(255)
+
+type: enum(EPA, EPIC, MINISTERE, ENTREPRISE_PRIVEE, ENTREPRISE_PUBLIQUE, GROUPEMENT) [NN]
+
+is_verified: boolean
+
+created_at: datetime
+
+updated_at: datetime
+
+Table: services_contractants
+
+id: char(36) [PK]
+
+organisation_id: char(36) [NN] -> FK to organisations.id
+
+user_id: char(36) [NN]
+
+code_service: varchar(50)
+
+secteur_activite: varchar(255)
+
+ordonnateur: varchar(255)
+
+created_at: datetime
+
+Table: operateurs_economiques
+
+id: char(36) [PK]
+
+organisation_id: char(36) [NN] -> FK to organisations.id
+
+user_id: char(36) [NN]
+
+qualifications: text
+
+categories: varchar(255)
+
+is_eligible: boolean
+
+is_blacklisted: boolean
+
+raison_blacklist: text
+
+created_at: datetime
+
+Table: user_roles
+
+id: char(36) [PK]
+
+user_id: char(36) [NN]
+
+role_id: char(36) [NN] -> FK to roles.id
+
+assigned_at: datetime
+
+Table: roles
+
+id: char(36) [PK]
+
+name: enum(ADMIN, SERVICE_CONTRACTANT, OPERATEUR_ECONOMIQUE, MEMBRE_COMMISSION, CONTROLEUR) [NN]
+
+description: varchar(255)
+
+Table: profiles
+
+id: char(36) [PK]
+
+user_id: char(36) [NN]
+
+nom: varchar(100) [NN]
+
+prenom: varchar(100) [NN]
+
+telephone: varchar(20)
+
+langue: enum(ar, fr)
+
+created_at: datetime
+
+updated_at: datetime
+
+8. Submissions & Encryption (Image 8)
+
+Table: cles_chiffrement
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN]
+
+cle_publique: text [NN]
+
+cle_privee_chiffree: text [NN]
+
+statut: enum(ACTIVE, UTILISEE, REVOQUEE)
+
+date_generation: datetime
+
+date_utilisation: datetime
+
+Table: soumissions
+
+id: char(36) [PK]
+
+appel_offre_id: char(36) [NN]
+
+operateur_id: char(36) [NN]
+
+lot_id: char(36)
+
+reference: varchar(50) [NN]
+
+statut: enum(BROUILLON, DEPOSEE, RECUE, OUVERTE, EVALUEE, RETENUE, REJETEE)
+
+date_depot: datetime
+
+horodatage_serveur: datetime [NN]
+
+is_electronique: boolean
+
+ip_depot: varchar(45)
+
+is_dans_delai: boolean
+
+created_at: datetime
+
+updated_at: datetime
+
+Table: offres_techniques
+
+id: char(36) [PK]
+
+soumission_id: char(36) [NN] -> FK to soumissions.id
+
+fichier_url: varchar(500) [NN]
+
+hash_fichier: varchar(128) [NN]
+
+is_conforme: boolean
+
+observations: text
+
+created_at: datetime
+
+Table: offres_financieres
+
+id: char(36) [PK]
+
+soumission_id: char(36) [NN] -> FK to soumissions.id
+
+montant_ht: decimal(15,2)
+
+montant_ttc: decimal(15,2)
+
+tva: decimal(5,2)
+
+fichier_chiffre_url: varchar(500) [NN]
+
+hash_fichier: varchar(128) [NN]
+
+is_dechiffree: boolean
+
+date_dechiffrement: datetime
+
+created_at: datetime
+
+Table: cautions
+
+id: char(36) [PK]
+
+soumission_id: char(36) [NN] -> FK to soumissions.id
+
+montant: decimal(15,2) [NN]
+
+banque: varchar(255)
+
+reference: varchar(100)
+
+date_emission: datetime
+
+date_expiration: datetime
+
+statut: enum(VALIDE, EXPIREE, RESTITUEE)
+
+fichier_url: varchar(500)
+
+created_at: datetime
+
+9. Users & Authentication (Image 9)
+
+Table: users
+
+id: char(36) [PK]
+
+email: varchar(255) [NN]
+
+password_hash: varchar(255) [NN]
+
+is_active: boolean
+
+mfa_enabled: boolean
+
+mfa_secret: varchar(255)
+
+last_login: datetime
+
+created_at: datetime
+
+updated_at: datetime
+
+Table: sessions
+
+id: char(36) [PK]
+
+user_id: char(36) [NN] -> FK to users.id
+
+token: varchar(512) [NN]
+
+ip_address: varchar(45)
+
+user_agent: varchar(512)
+
+expires_at: datetime [NN]
+
+created_at: datetime
+
+Table: password_resets
+
+id: char(36) [PK]
+
+user_id: char(36) [NN] -> FK to users.id
+
+token: varchar(255) [NN]
+
+used: boolean
+
+expires_at: datetime [NN]
+
+created_at: datetime
+
+10. Audit & AI Incidents (Image 10)
+
+Table: audit_logs
+
+id: char(36) [PK]
+
+user_id: char(36) [NN]
+
+action: varchar(100) [NN]
+
+entite: varchar(100) [NN]
+
+entite_id: char(36)
+
+details: text
+
+ip_address: varchar(45)
+
+user_agent: varchar(512)
+
+hash_sha256: varchar(64) [NN]
+
+hash_precedent: varchar(64)
+
+horodatage: datetime [NN]
+
+Table: incidents_ia
+
+id: char(36) [PK]
+
+type_incident: enum(DIVERGENCE_GRE_A_GRE, DIVERGENCE_EVALUATION, ERREUR_IA, CONFIANCE_FAIBLE) [NN]
+
+entite_source: varchar(100) [NN]
+
+entite_id: char(36) [NN]
+
+modele_ia: varchar(100) [NN]
+
+decision_ia: text [NN]
+
+decision_humaine: text [NN]
+
+ecart_score: decimal(5,2)
+
+confiance_ia: decimal(5,2)
+
+gravite: enum(FAIBLE, MOYENNE, ELEVEE, CRITIQUE) [NN]
+
+statut: enum(OUVERT, EN_ANALYSE, RESOLU, IGNORE)
+
+assignee_id: char(36)
+
+resolution_notes: text
+
+date_detection: datetime [NN]
+
+date_resolution: datetime
+
+created_at: datetime
+
+Table: logs_ia_decisions
+
+id: char(36) [PK]
+
+incident_id: char(36) -> FK to incidents_ia.id
+
+action: varchar(100) [NN]
+
+acteur_type: enum(IA, HUMAIN, SYSTEME) [NN]
+
+acteur_id: varchar(100)
+
+donnees_contexte: json
+
+metadata: json
+
+horodatage: datetime [NN]

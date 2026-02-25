@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الميزان</string>
+    <string name="app_tagline">المشتريات السيادية</string>
+    <string name="footer_ministry">وزارة المالية</string>
+
+    <!-- ── COMMON ── -->
+    <string name="lang_french">FRANÇAIS</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="lang_english">ENGLISH</string>
+    <string name="password_weak">ضعيف</string>
+    <string name="password_medium">متوسط</string>
+    <string name="password_strong">قوي</string>
+    <string name="e2ee_secured">مؤمّن E2EE</string>
+    <string name="bank_encryption">تشفير مصرفي</string>
+    <string name="err_email_invalid">صيغة البريد الإلكتروني غير صحيحة</string>
+    <string name="err_phone_invalid">رقم جزائري غير صحيح (مثال: 0555 123 456)</string>
+    <string name="err_passwords_no_match">كلمتا المرور غير متطابقتين</string>
+    <string name="passwords_match">كلمتا المرور متطابقتان</string>
+
+    <!-- ── LOGIN SCREEN ── -->
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="login_welcome">مرحباً! يرجى إدخال بيانات الاعتماد للوصول إلى لوحة التحكم.</string>
+    <string name="login_email_label">البريد الإلكتروني</string>
+    <string name="login_password_label">كلمة المرور</string>
+    <string name="login_remember_me">تذكرني</string>
+    <string name="login_forgot_password">نسيت كلمة المرور؟</string>
+    <string name="login_sign_in_btn">دخول</string>
+    <string name="login_or_divider">أو</string>
+    <string name="login_biometrics">الدخول بالبصمة</string>
+    <string name="login_no_account">ليس لديك حساب؟</string>
+    <string name="login_register">سجّل هنا</string>
+    <string name="password_show">إظهار</string>
+    <string name="password_hide">إخفاء</string>
+
+
+    <!-- ── VERIFICATION SCREEN ── -->
+    <string name="verif_title">التحقق بخطوتين</string>
+    <string name="verif_subtitle">تم إرسال رمز تحقق مكوّن من 6 أرقام إلى بريدك الإلكتروني المهني المسجّل.</string>
+    <string name="verif_expires_label">الرمز ينتهي خلال</string>
+    <string name="verif_verify_btn">تحقق والدخول</string>
+    <string name="verif_no_code">لم تستلم الرمز؟</string>
+    <string name="verif_resend">إعادة إرسال الرمز</string>
+    <string name="verif_footer_1">منصة الميزان السيادية</string>
+    <string name="verif_footer_2">وصول آمن — وزارة المالية</string>
+    <string name="verif_logout">تسجيل الخروج</string>
+    <string name="verif_notifications">الإشعارات</string>
+    <string name="verif_no_notifs">لا توجد إشعارات</string>
+
+    <!-- ── FORGOT PASSWORD SCREEN ── -->
+    <string name="fp_title">إعادة تعيين كلمة المرور</string>
+    <string name="fp_subtitle">أدخل عنوان بريدك الإلكتروني المسجل وسنرسل لك تعليمات لإعادة التعيين بأمان.</string>
+    <string name="fp_email_label">البريد الإلكتروني</string>
+    <string name="fp_email_placeholder">nom.prenom@domain.dz</string>
+    <string name="fp_send_btn">إرسال رمز إعادة التعيين</string>
+    <string name="fp_remembered">هل تتذكر كلمة مرورك؟</string>
+    <string name="fp_sign_in">تسجيل الدخول هنا</string>
+
+    <!-- ── SET NEW PASSWORD SCREEN ── -->
+    <string name="snp_title">كلمة مرور جديدة</string>
+    <string name="snp_subtitle">أدخل رمز الاسترداد الذي تلقيته عبر البريد الإلكتروني ثم حدّد كلمة مرورك الجديدة.</string>
+    <string name="snp_recovery_label">رمز الاسترداد</string>
+    <string name="snp_new_pass_label">كلمة المرور الجديدة</string>
+    <string name="snp_confirm_label">تأكيد كلمة المرور</string>
+    <string name="snp_new_pass_ph">8 أحرف على الأقل</string>
+    <string name="snp_confirm_ph">أعد كتابة كلمة المرور</string>
+    <string name="snp_save_btn">حفظ كلمة المرور الجديدة</string>
+    <string name="snp_password_mismatch">كلمتا المرور غير متطابقتين</string>
+
+    <!-- ── ACCOUNT LOCKED SCREEN ── -->
+    <string name="al_title">الحساب مقفل</string>
+    <string name="al_subtitle">لأمانك، تم قفل حسابك مؤقتًا بسبب محاولات تسجيل دخول فاشلة متعددة.</string>
+    <string name="al_try_again">يرجى المحاولة مرة أخرى خلال</string>
+    <string name="al_reset_btn">إعادة تعيين كلمة المرور عبر البريد</string>
+    <string name="al_contact_support">التواصل مع الدعم</string>
+
+    <!-- ── REGISTRATION STEP 1 ── -->
+    <string name="reg1_step_label">الخطوة 1 من 3</string>
+    <string name="reg1_section_title">تفاصيل المنظمة</string>
+    <string name="reg1_section_sub">المعلومات العامة والمعرّفات الضريبية</string>
+    <string name="reg1_field_org_name">الاسم التجاري</string>
+    <string name="reg1_field_nif">رمز NIF</string>
+    <string name="reg1_field_nis">رقم NIS</string>
+    <string name="reg1_field_rc">رقم السجل التجاري (RC)</string>
+    <string name="reg1_ph_org">مثال: Al-Mizan Solutions Sarl</string>
+    <string name="reg1_ph_nif">NIF مكوّن من 15 رقمًا</string>
+    <string name="reg1_ph_nis">NIS</string>
+    <string name="reg1_ph_rc">أدخل رقم السجل التجاري</string>
+    <string name="reg1_secure_title">بيانات سيادية مؤمّنة</string>
+    <string name="reg1_secure_body">تُشفَّر بيانات هوية مؤسستك وتُدار وفق بروتوكولات سيادية.</string>
+    <string name="reg1_continue_btn">المتابعة إلى الخطوة 2 ←</string>
+    <string name="reg1_back_label">→ العودة إلى الرئيسية</string>
+    <string name="reg1_terms_text">أوافق على </string>
+    <string name="reg1_terms_link">شروط الاستخدام</string>
+    <string name="reg1_and"> و</string>
+    <string name="reg1_privacy_link">سياسة الخصوصية</string>
+
+    <!-- ── REGISTRATION STEP 2 ── -->
+    <string name="reg2_step_label">الخطوة 2 من 3</string>
+    <string name="reg2_section_title">بيانات اعتماد الشركة</string>
+    <string name="reg2_section_sub">أنشئ بيانات اعتماد دخول آمنة</string>
+    <string name="reg2_phone_label">رقم هاتف الشركة</string>
+    <string name="reg2_email_label">البريد المهني (معرّف الدخول)</string>
+    <string name="reg2_password_label">كلمة المرور</string>
+    <string name="reg2_confirm_label">تأكيد كلمة المرور</string>
+    <string name="reg2_ph_phone">+213 555 123 456</string>
+    <string name="reg2_ph_email">nom@entreprise.com</string>
+    <string name="reg2_admin_title">المسؤول الرئيسي</string>
+    <string name="reg2_admin_body">سيتمتع هذا الحساب بصلاحية إدارية كاملة لإدارة ملف المؤسسة.</string>
+    <string name="reg2_identity">التحقق من الهوية مطلوب</string>
+    <string name="reg2_continue_btn">المتابعة إلى الخطوة 3 ←</string>
+    <string name="reg2_back_label">→ العودة إلى تفاصيل المنظمة</string>
+    <string name="reg2_nom_label">اللقب</string>
+    <string name="reg2_ph_nom">أدخل لقبك</string>
+    <string name="reg2_prenom_label">الاسم</string>
+    <string name="reg2_ph_prenom">أدخل اسمك</string>
+
+    <!-- ── REGISTRATION STEP 3 ── -->
+    <string name="reg3_step_label">الخطوة 3 من 3</string>
+    <string name="reg3_section_title">التحقق من الوثائق</string>
+    <string name="reg3_section_sub">ارفع وثيقتك الرسمية وسيحللها نظام الذكاء الاصطناعي تلقائيًا.</string>
+    <string name="reg3_upload_title">رفع وثيقة</string>
+    <string name="reg3_upload_sub">PDF أو JPG أو PNG · الحد الأقصى 10 ميغابايت</string>
+    <string name="reg3_upload_btn">اختيار ملف</string>
+    <string name="reg3_analyzing">جارٍ التحليل بالذكاء الاصطناعي…</string>
+    <string name="reg3_analyzing_msg">يستخرج الذكاء الاصطناعي معلومات الوثيقة ويتحقق منها.</string>
+    <string name="reg3_analyzed">اكتمل التحليل</string>
+    <string name="reg3_analyzed_msg">تم استخراج المعلومات بنجاح.</string>
+    <string name="reg3_change_doc">تغيير الوثيقة</string>
+    <string name="reg3_privacy_title">ضمان الخصوصية</string>
+    <string name="reg3_privacy_body">وثائقك مشفّرة ولا يمكن الاطلاع عليها إلا من قِبَل موظفي التحقق المعتمدين.</string>
+    <string name="reg3_submit_btn">إرسال طلب التسجيل</string>
+    <string name="reg3_back_label">→ العودة إلى بيانات الاعتماد</string>
+    <string name="reg_success_title">!تم التسجيل بنجاح</string>
+    <string name="reg_success_body">تم إنشاء حسابك.</string>
+    <string name="reg_success_btn">الذهاب إلى تسجيل الدخول</string>
+
+    <!-- ── COMMON FOOTER / BACK ── -->
+    <string name="back_to_welcome">→ العودة إلى الرئيسية</string>
+    <string name="back_to_org_details">→ العودة إلى تفاصيل المنظمة</string>
+    <string name="back_to_credentials">→ العودة إلى بيانات الاعتماد</string>
+    <string name="sovereign_footer">© 2024 منصة الميزان السيادية</string>
+
+    <!-- Bottom bar tabs -->
+    <string name="tab_home">الرئيسية</string>
+    <string name="tab_search">المناقصات</string>
+    <string name="tab_my_bids">عروضي</string>
+    <string name="tab_profile">الملف</string>
+
+    <!-- Top bar -->
+    <string name="topbar_verified">✓ موثق</string>
+    <string name="topbar_tier">مفتوح</string>
+    <string name="topbar_disconnect">تسجيل الخروج</string>
+    <string name="topbar_notifications">الإشعارات</string>
+    <string name="topbar_change_language">اللغة</string>
+
+
+    <!-- Advanced Filter -->
+    <string name="filter_title">فلاتر متقدمة</string>
+    <string name="filter_reset">إعادة تعيين</string>
+    <string name="filter_market_sector">قطاع السوق</string>
+    <string name="filter_procedure_type">نوع الإجراء</string>
+    <string name="filter_procedure_hint">اختر نوعاً</string>
+    <string name="filter_wilaya_search">البحث عن ولاية</string>
+    <string name="filter_tender_status">حالة المناقصة</string>
+    <string name="filter_bank_guarantee">ضمان بنكي مطلوب</string>
+    <string name="filter_deadline_range">نطاق الموعد النهائي</string>
+    <string name="filter_deadline_from">من</string>
+    <string name="filter_deadline_to">إلى</string>
+    <string name="filter_show_results">عرض النتائج</string>
+
+    <!-- Sectors -->
+    <string name="sector_construction">البناء</string>
+    <string name="sector_it">تكنولوجيا المعلومات</string>
+    <string name="sector_health">الصحة</string>
+    <string name="sector_education">التعليم</string>
+    <string name="sector_energy">الطاقة</string>
+    <string name="sector_transport">النقل</string>
+
+    <!-- Procedure types -->
+    <string name="proc_open">مناقصة مفتوحة</string>
+    <string name="proc_restricted">مناقصة مقيدة</string>
+    <string name="proc_negotiated">إجراء تفاوضي</string>
+    <string name="proc_direct">اتفاق مباشر</string>
+    <string name="proc_competitive">استشارة تنافسية</string>
+
+
+    <!-- Tender status -->
+    <string name="status_open">مفتوحة</string>
+    <string name="status_closed">مغلقة</string>
+    <string name="status_evaluation">قيد التقييم</string>
+    <string name="status_awarded">مُرسَاة</string>
+
+    <!-- ── PROFILE SCREEN ── -->
+    <string name="profile_loading">جارٍ تحميل الملف الشخصي…</string>
+    <string name="profile_retry">إعادة المحاولة</string>
+    <string name="profile_section_org">المؤسسة</string>
+    <string name="profile_section_personal">المعلومات الشخصية</string>
+    <string name="profile_section_account">حسابي</string>
+    <string name="profile_section_danger">منطقة الخطر</string>
+    <string name="profile_field_fullname">الاسم الكامل</string>
+    <string name="profile_edit_profile">تعديل الملف الشخصي</string>
+    <string name="profile_change_password">تغيير كلمة المرور</string>
+    <string name="profile_delete_account">حذف الحساب</string>
+
+    <!-- Logout dialog -->
+    <string name="profile_logout_confirm_title">تسجيل الخروج</string>
+    <string name="profile_logout_confirm_body">هل أنت متأكد من رغبتك في تسجيل الخروج من منصة الميزان؟</string>
+    <string name="profile_logout_confirm_btn">تسجيل الخروج</string>
+    <string name="profile_cancel">إلغاء</string>
+
+    <!-- Edit profile -->
+    <string name="profile_edit_notice">يمكن تعديل الاسم ورقم الهاتف فقط. للتعديل على بيانات المؤسسة يرجى التواصل مع الدعم الفني.</string>
+    <string name="profile_field_required">هذا الحقل مطلوب</string>
+    <string name="profile_save_btn">حفظ التغييرات</string>
+    <string name="profile_update_success">تم تحديث الملف الشخصي بنجاح!</string>
+
+    <!-- Change password -->
+    <string name="profile_password_notice">لأمانك، ستبقى جلستك نشطة بعد تغيير كلمة المرور. سيُرسل إليك بريد إلكتروني للتأكيد.</string>
+    <string name="profile_current_password">كلمة المرور الحالية</string>
+    <string name="profile_password_changed">تم تغيير كلمة المرور بنجاح!</string>
+
+    <!-- Language screen -->
+    <string name="profile_language_title">اختيار اللغة</string>
+    <string name="profile_language_subtitle">اختر لغة عرض منصة الميزان.</string>
+    <string name="profile_language_apply">تطبيق</string>
+
+    <!-- Delete account -->
+    <string name="profile_delete_title">حذف الحساب</string>
+    <string name="profile_delete_subtitle">هذا الإجراء لا رجعة فيه. سيتم حذف جميع بياناتك نهائيًا من منصة الميزان.</string>
+    <string name="profile_delete_consequences_title">ما سيتم حذفه</string>
+    <string name="profile_delete_con1">ملفك الشخصي ومعلوماتك الشخصية</string>
+    <string name="profile_delete_con2">جميع عروضك وطلباتك الجارية</string>
+    <string name="profile_delete_con3">الوصول إلى منصة الميزان السيادية</string>
+    <string name="profile_delete_con4">سجل جميع معاملاتك</string>
+    <string name="profile_delete_type_confirm">اكتب "%1$s" للتأكيد</string>
+    <string name="profile_delete_confirm_word">حذف</string>
+    <string name="profile_delete_btn">حذف نهائي</string>
+    <string name="profile_delete_dialog_title">التأكيد النهائي</string>
+    <string name="profile_delete_dialog_body">سيتم حذف حسابك نهائيًا. هذا الإجراء لا يمكن التراجع عنه.</string>
+    <!-- ── MY BIDS SCREEN ── -->
+    <string name="mybids_tab_purchased_cdcs">كراسات الشروط المشتراة</string>
+    <string name="mybids_tab_my_submissions">عروضي</string>
+
+    <!-- Filters -->
+    <string name="mybids_filter_hide_submitted">إخفاء المقدمة</string>
+    <string name="mybids_filter_closing_soon">قريبة الإغلاق</string>
+    <string name="mybids_filter_all">الكل</string>
+    <string name="mybids_filter_active_bids">العروض النشطة</string>
+    <string name="mybids_filter_results_appeals">النتائج والطعون</string>
+
+    <!-- Search and Sort -->
+    <string name="mybids_search_tenders">البحث عن المناقصات…</string>
+    <string name="mybids_search_submissions">البحث عن العروض أو الطعون…</string>
+    <string name="mybids_sort">فرز</string>
+
+    <!-- Purchased CDC Card -->
+    <string name="mybids_tender">مناقصة</string>
+    <string name="mybids_deadline">الموعد النهائي</string>
+    <string name="mybids_purchased">تم الشراء</string>
+    <string name="mybids_last_modification">آخر تعديل</string>
+    <string name="mybids_bid_submitted">تم تقديم العرض</string>
+    <string name="mybids_read_cdc">قراءة الكراسة</string>
+    <string name="mybids_start_bid_wizard">بدء العرض</string>
+    <string name="mybids_resume_bid">استئناف العرض</string>
+    <string name="mybids_track_bid">تتبع العرض</string>
+
+    <!-- Submission Card -->
+    <string name="mybids_ref">المرجع</string>
+    <string name="mybids_submitted">تم التقديم</string>
+    <string name="mybids_score">النتيجة</string>
+    <string name="mybids_value">القيمة</string>
+    <string name="mybids_days_left_appeal">أيام متبقية لتقديم طعن قانوني</string>
+    <string name="mybids_track_status">تتبع الحالة</string>
+    <string name="mybids_view_results">عرض النتائج</string>
+    <string name="mybids_file_appeal">تقديم طعن</string>
+    <string name="mybids_view_contract_details">عرض تفاصيل العقد</string>
+
+    <!-- Submission Status -->
+    <string name="mybids_status_in_evaluation">قيد التقييم</string>
+    <string name="mybids_status_not_retained">مرفوض</string>
+    <string name="mybids_status_awarded">تم الترسية</string>
+
+    <!-- ── BID WIZARD ── -->
+    <!-- Top Bar & Progress -->
+    <string name="wizard_step_of">الخطوة %1$d من %2$d</string>
+    <string name="wizard_save_exit">حفظ والخروج</string>
+    <string name="wizard_overall_progress">التقدم الإجمالي</string>
+    <string name="wizard_progress">%1$d%% مكتمل</string>
+
+    <!-- Bottom Buttons -->
+    <string name="wizard_confirm_continue">تأكيد والمتابعة</string>
+    <string name="wizard_confirm_technical_upload">تأكيد الرفع التقني</string>
+    <string name="wizard_confirm_financial">تأكيد العرض المالي</string>
+    <string name="wizard_next_step">الخطوة التالية</string>
+    <string name="wizard_submit_bid_final">تقديم العرض</string>
+
+    <!-- Step 1: Lot Selection -->
+    <string name="wizard_available_lots">اللوتات المتاحة في هذه المناقصة</string>
+    <string name="wizard_selected">محدد</string>
+    <string name="wizard_available">متاح</string>
+
+    <!-- Step 2: Technical Offer -->
+    <string name="wizard_upload_technical_pdf">انقر لرفع ملف PDF الفني</string>
+    <string name="wizard_max_file_size">الحجم الأقصى: 50 ميجابايت</string>
+    <string name="wizard_uploaded_documents">المستندات المرفوعة</string>
+    <string name="wizard_secure_handling_title">معالجة آمنة للمستندات</string>
+    <string name="wizard_secure_handling_desc">سيتم تشفير مستندك وختمه زمنياً. سيتم تسجيل الهاش لضمان سلامة الملف.</string>
+
+    <!-- Step 3: Financial Offer -->
+    <string name="wizard_amount_ht">المبلغ بدون ضريبة (دج)</string>
+    <string name="wizard_amount_placeholder">أدخل المبلغ بدون ضريبة</string>
+    <string name="wizard_tva">ضريبة القيمة المضافة (%)</string>
+    <string name="wizard_total_ttc">الإجمالي شامل الضريبة</string>
+
+    <!-- Step 4: Bank Guarantee -->
+    <string name="wizard_guarantee_amount">مبلغ الضمان (دج)</string>
+    <string name="wizard_guarantee_amount_placeholder">أدخل مبلغ الضمان</string>
+    <string name="wizard_issuing_bank">البنك المصدر</string>
+    <string name="wizard_bank_placeholder">اسم البنك</string>
+    <string name="wizard_guarantee_reference">مرجع الضمان</string>
+    <string name="wizard_reference_placeholder">رقم المرجع</string>
+    <string name="wizard_upload_guarantee">رفع شهادة الضمان البنكي</string>
+    <string name="wizard_guarantee_validity_note">يجب أن يكون الضمان صالحاً لمدة 90 يوماً على الأقل بعد تاريخ انتهاء التقديم.</string>
+
+    <!-- Step 5: Final Review -->
+    <string name="wizard_summary_details">ملخص العرض</string>
+    <string name="wizard_lot_selected">اللوت المحدد</string>
+    <string name="wizard_financial_offer">العرض المالي</string>
+    <string name="wizard_guarantee">الضمان</string>
+    <string name="wizard_provided">مقدم</string>
+    <string name="wizard_certification_text">أشهد أن جميع المعلومات المقدمة دقيقة وكاملة. أتفهم أن أي بيان كاذب قد يؤدي إلى استبعاد عرضي والملاحقة القانونية.</string>
+
+    <!-- ── BID SUBMITTED SCREEN ── -->
+    <string name="submission_title">تقديم العرض</string>
+    <string name="submission_secure">تقديم آمن</string>
+    <string name="submission_secure_desc">تم تشفير عرضك وتسجيله رسمياً في السجل السيادي.</string>
+    <string name="submission_transaction_id">رقم المعاملة</string>
+    <string name="submission_tender_ref">مرجع المناقصة</string>
+    <string name="submission_timestamp">الختم الزمني الرسمي</string>
+    <string name="submission_status_label">الحالة</string>
+    <string name="submission_sealed_stored">مختوم ومحفوظ</string>
+    <string name="submission_guarantee_title">الضمان السيادي</string>
+    <string name="submission_guarantee_desc">هذه المعاملة محمية ببروتوكول الصفقات العمومية الرقمية الوطني. لا يمكن إجراء أي تعديلات بعد هذه النقطة.</string>
+    <string name="submission_download_receipt">تحميل الإيصال الرسمي</string>
+    <string name="submission_return_dashboard">العودة إلى لوحة التحكم</string>
+
+    <!-- ── BID STATUS SCREEN ── -->
+    <string name="status_title">حالة العرض</string>
+    <string name="status_crypto_receipt">الإيصال المشفر</string>
+    <string name="status_official_timestamp">الختم الزمني الرسمي</string>
+    <string name="status_tech_hash">هاش التقني</string>
+    <string name="status_fin_offer">العرض المالي</string>
+    <string name="status_encrypted_e2ee">مشفر E2EE</string>
+    <string name="status_live_progress">التقدم المباشر</string>
+    <string name="status_bid_submitted">تم تقديم العرض وختمه</string>
+    <string name="status_bid_submitted_desc">تم إغلاق بوابة التقديم بنجاح.</string>
+    <string name="status_plis_opened">تم فتح المظاريف من قبل اللجنة</string>
+    <string name="status_plis_opened_desc">تم فك تشفير العرض المالي والتحقق منه.</string>
+    <string name="bid_status_evaluation">التقييم التقني والمالي</string>
+    <string name="status_evaluation_desc">قيد المراجعة حالياً من قبل اللجنة.</string>
+    <string name="status_attribution">الترسية المؤقتة</string>
+    <string name="status_attribution_desc">في انتظار نتائج التقييم.</string>
+    <string name="status_active">نشط</string>
+    <string name="status_contact_support">التواصل مع الدعم لهذا العرض</string>
+
+    <!-- ── EVALUATION RESULTS SCREEN ── -->
+    <string name="results_title">نتائج التقييم</string>
+    <string name="results_not_retained">غير مقبول</string>
+    <string name="results_submission_id">رقم العرض</string>
+    <string name="results_your_scores">درجاتك</string>
+    <string name="results_tech">تقني</string>
+    <string name="results_financial">مالي</string>
+    <string name="results_total">إجمالي</string>
+    <string name="results_motif">السبب</string>
+    <string name="results_attribution">الترسية المؤقتة</string>
+    <string name="results_awarded_to">تم الترسية لـ</string>
+    <string name="results_winning_score">الدرجة الفائزة</string>
+    <string name="results_awarded_amount">المبلغ الممنوح</string>
+    <string name="results_days_left_appeal">أيام متبقية لتقديم الطعن</string>
+    <string name="results_file_appeal">تقديم طعن قانوني</string>
+
+    <!-- ── FILE APPEAL SCREEN ── -->
+    <string name="appeal_title">تقديم طعن</string>
+    <string name="appeal_warning">يجب تقديم الطعون خلال 10 أيام من إشعار الترسية المؤقتة. قد تؤدي الطعون التعسفية إلى عقوبات.</string>
+    <string name="appeal_justification_label">التبرير القانوني أو التقني</string>
+    <string name="appeal_justification_placeholder">قم بتفصيل المواد المحددة من دفتر الشروط أو القانون 23-12 التي تم انتهاكها…</string>
+    <string name="appeal_upload_label">رفع الأدلة (اختياري)</string>
+    <string name="appeal_upload_prompt">اضغط لرفع PDF/ZIP</string>
+    <string name="appeal_max_size">الحجم الأقصى: 10 ميغابايت</string>
+    <string name="appeal_certification">أصرح بأن المعلومات المقدمة دقيقة وأنني مخول بتقديم هذا الطعن نيابة عن الشركة.</string>
+    <string name="appeal_submit">تقديم الطعن إلى اللجنة</string>
+    <string name="appeal_success_title">تم تقديم الطعن</string>
+    <string name="appeal_success_desc">تم تسجيل طعنك رسمياً وإرساله إلى لجنة التقييم للمراجعة.</string>
+    <string name="appeal_ao_label">المناقصة المعنية</string>
+    <string name="appeal_select_ao">اختر مناقصة</string>
+    <string name="appeal_attribution_label">القرار المؤقت المطعون فيه</string>
+    <string name="appeal_select_attribution">اختر ترسية</string>
+    <string name="appeal_attribution_item_format">ترسية بتاريخ %1$s — %2$s د.ج</string>
+    <string name="appeal_processing">جارٍ المعالجة…</string>
+    <string name="appeal_back_to_list">العودة إلى طعوني</string>
+
+    <!-- ── PROFILE SCREEN ── -->
+    <string name="profile_verified">موثّق</string>
+    <string name="profile_eligible">مؤهل</string>
+    <string name="profile_blacklisted">مدرج في القائمة السوداء</string>
+    <string name="profile_blacklist_reason">سبب الإدراج في القائمة السوداء</string>
+    <string name="profile_close">إغلاق</string>
+    <string name="profile_personal_info">المعلومات الشخصية</string>
+    <string name="profile_edit">تعديل</string>
+    <string name="profile_full_name">الاسم الكامل</string>
+    <string name="profile_email">البريد الإلكتروني</string>
+    <string name="profile_phone">الهاتف</string>
+    <string name="profile_language">اللغة</string>
+    <string name="profile_organisation_info">معلومات المؤسسة</string>
+    <string name="profile_nif">الرقم الجبائي</string>
+    <string name="profile_nis">رقم التعريف الإحصائي</string>
+    <string name="profile_rc">السجل التجاري</string>
+    <string name="profile_address">العنوان</string>
+    <string name="profile_wilaya">الولاية</string>
+    <string name="profile_company_type">نوع الشركة</string>
+    <string name="profile_request_update">طلب تحديث</string>
+    <string name="profile_operational">الملف التشغيلي</string>
+    <string name="profile_categories">الفئات المهنية</string>
+    <string name="profile_qualifications">المؤهلات</string>
+    <string name="profile_nav_documents">الوثائق الإدارية</string>
+    <string name="profile_nav_security">الأمان والمصادقة</string>
+    <string name="profile_nav_settings">الإعدادات والتدقيق</string>
+
+    <!-- ── DOCUMENTS SCREEN ── -->
+    <string name="docs_title">الوثائق الإدارية</string>
+    <string name="docs_back">رجوع</string>
+    <string name="docs_upload_new">رفع وثيقة جديدة</string>
+    <string name="docs_summary_title">نظرة عامة على الوثائق</string>
+    <string name="docs_status_valid">صالح</string>
+    <string name="docs_status_expired">منتهي</string>
+    <string name="docs_status_ai_flag">تنبيه IA</string>
+    <string name="docs_expiration">انتهاء الصلاحية</string>
+    <string name="docs_size">الحجم</string>
+    <string name="docs_ai_score">نتيجة IA</string>
+    <string name="docs_ai_anomaly_detected">اكتشف الذكاء الاصطناعي شذوذاً</string>
+    <string name="docs_confidence">الثقة</string>
+    <string name="docs_anomalies">الشذوذات</string>
+    <string name="docs_update_btn">تحديث الوثيقة</string>
+    <string name="docs_type_nif">رقم التعريف الجبائي (NIF)</string>
+    <string name="docs_type_nis">رقم التعريف الإحصائي (NIS)</string>
+    <string name="docs_type_rc">السجل التجاري (RC)</string>
+    <string name="docs_type_cnas">شهادة CNAS</string>
+    <string name="docs_type_casnos">شهادة CASNOS</string>
+    <string name="docs_type_bilan">الميزانية المحاسبية</string>
+
+    <!-- ── SECURITY SCREEN ── -->
+    <string name="security_title">الأمان والمصادقة</string>
+    <string name="security_back">رجوع</string>
+    <string name="security_password_title">كلمة المرور</string>
+    <string name="security_password_changed">تم تغيير كلمة المرور منذ %1$d يوم</string>
+    <string name="security_change_password">تعديل</string>
+    <string name="security_mfa_title">المصادقة الثنائية</string>
+    <string name="security_mfa_active">مفعّل</string>
+    <string name="security_mfa_inactive">غير مفعّل</string>
+    <string name="security_active_sessions">الجلسات النشطة</string>
+    <string name="security_current_device">هذا الجهاز</string>
+    <string name="security_revoke_session">إلغاء الجلسة</string>
+    <string name="security_logout_all">تسجيل الخروج من جميع الأجهزة الأخرى</string>
+
+    <!-- ── SETTINGS SCREEN ── -->
+    <string name="settings_title">الإعدادات والتدقيق</string>
+    <string name="settings_back">رجوع</string>
+    <string name="settings_notification_channels">قنوات الإشعارات</string>
+    <string name="settings_notification_categories">فئات الإشعارات</string>
+    <string name="settings_audit_log">سجل النشاط</string>
+
+    <!-- Notification Channels -->
+    <string name="settings_channel_email">البريد الإلكتروني</string>
+    <string name="settings_channel_sms">الرسائل القصيرة</string>
+    <string name="settings_channel_push">إشعارات الدفع</string>
+
+    <!-- Notification Categories -->
+    <string name="settings_cat_publication">المنشورات الجديدة</string>
+    <string name="settings_cat_publication_desc">تنبيهات المناقصات الجديدة</string>
+    <string name="settings_cat_evaluation">نتائج التقييم</string>
+    <string name="settings_cat_evaluation_desc">إشعارات الدرجات والقرارات</string>
+    <string name="settings_cat_attribution">الترسية المؤقتة</string>
+    <string name="settings_cat_attribution_desc">تنبيهات ترسية العقود</string>
+    <string name="settings_cat_recours">الطعون</string>
+    <string name="settings_cat_recours_desc">تحديثات إجراءات الطعن</string>
+    <string name="settings_cat_systeme">تنبيهات النظام</string>
+    <string name="settings_cat_systeme_desc">الصيانة وتحديثات الأمان</string>
+
+    <!-- Audit Log Actions -->
+    <string name="settings_action_login">تسجيل الدخول</string>
+    <string name="settings_action_logout">تسجيل الخروج</string>
+    <string name="settings_action_upload_doc">رفع مستند</string>
+    <string name="settings_action_submit_bid">تقديم عرض</string>
+    <string name="settings_action_update_profile">تحديث الملف الشخصي</string>
+    <string name="settings_action_download_receipt">تحميل الإيصال</string>
+    <string name="settings_action_view_results">عرض النتائج</string>
+    <string name="settings_action_file_appeal">تقديم طعن</string>
+    <string name="settings_action_change_password">تغيير كلمة المرور</string>
+
+    <!-- ── BID WIZARD OPERATEUR (6 STEPS) ── -->
+    <string name="wizard_cancel">إلغاء</string>
+    <string name="wizard_back">رجوع</string>
+    <string name="wizard_next">متابعة</string>
+    <string name="wizard_submit_final">إيداع العرض</string>
+    <string name="wizard_submit_processing">جارٍ الإيداع...</string>
+    
+    <!-- Step 1 -->
+    <string name="wizard_step1_title">اختيار المناقصة</string>
+    <string name="wizard_step1_subtitle">اختر المناقصة التي ترغب في المشاركة فيها، ثم حدد الحصص المعنية.</string>
+    <string name="wizard_search_ao">البحث عن مناقصة...</string>
+    <string name="wizard_no_ao_found">لم يتم العثور على أي مناقصة</string>
+    <string name="wizard_selected_badge">محدد</string>
+    <string name="wizard_limit">المهلة</string>
+    <string name="wizard_select_lot">تحديد الحصة المعنية</string>
+    <string name="wizard_estimated_amount">المبلغ التقديري :</string>
+
+    <!-- Step 2 -->
+    <string name="wizard_step2_title">الوثائق الإدارية</string>
+    <string name="wizard_step2_subtitle">قم برفع والتحقق من الوثائق الإلزامية لملف التعهد الخاص بك.</string>
+    <string name="wizard_blocking_docs">يجب تحديث %1$d وثيقة (وثائق) معرقلة قبل المتابعة.</string>
+    <string name="wizard_doc_conforme">مطابق</string>
+    <string name="wizard_doc_expire">منتهي الصلاحية</string>
+    <string name="wizard_doc_manquant">مفقود</string>
+    <string name="wizard_doc_charge">مُحمّل</string>
+    <string name="wizard_doc_expires_on">ينتهي في %1$s</string>
+    <string name="wizard_upload">رفع</string>
+    <string name="wizard_replace">استبدال</string>
+    <string name="wizard_admin_docs_formats">* وثائق إلزامية. الصيغ المقبولة: PDF، JPG، PNG (الحد الأقصى 10 ميغابايت).</string>
+
+    <!-- Step 3 -->
+    <string name="wizard_step3_title">العرض التقني</string>
+    <string name="wizard_step3_subtitle">أودع عرضك التقني: دفتر الشروط معبأ ومختوم وممضي للحصة المحددة.</string>
+    <string name="wizard_lots_concerned">الحصص المعنية</string>
+    <string name="wizard_tech_content">المحتوى المتوقع للملف التقني</string>
+    <string name="wizard_tech_content_1">دفتر الشروط معبأ ومؤشر على كل صفحة</string>
+    <string name="wizard_tech_content_2">مذكرة تقنية تبرر الوسائل البشرية والمادية</string>
+    <string name="wizard_tech_content_3">مراجع إنجازات مماثلة (إذا تطلب الأمر)</string>
+    <string name="wizard_tech_content_4">الجدول الزمني التقديري للإنجاز</string>
+    <string name="wizard_tech_content_5">الهيكل التنظيمي لفريق المشروع</string>
+    <string name="wizard_tech_file_label">ملف العرض التقني</string>
+    <string name="wizard_tech_dropzone_label">إيداع الملف التقني (PDF)</string>
+    <string name="wizard_tech_dropzone_sub">وثيقة واحدة تجمع كل القطع التقنية — PDF، الحد الأقصى 50 ميغابايت</string>
+
+    <!-- Step 4 -->
+    <string name="wizard_step4_title">العرض المالي (BPU)</string>
+    <string name="wizard_step4_subtitle">أدخل جدول الأسعار الوحدوية. سيتم تشفير المبالغ قبل الإرسال.</string>
+    <string name="wizard_fin_security_title">أمان العرض المالي</string>
+    <string name="wizard_fin_security_desc">سيتم تشفير عرضك المالي من جهة العميل ثم إرساله كملف مشفر متوافق مع خدمة التعهد.</string>
+    <string name="wizard_total_ht">المجموع خارج الرسوم</string>
+    <string name="wizard_bpu_designation">التعيين</string>
+    <string name="wizard_bpu_unit">الوحدة</string>
+    <string name="wizard_bpu_qty">الكمية</string>
+    <string name="wizard_bpu_unit_price">السعر الوحدوي</string>
+    <string name="wizard_bpu_total_ht">المبلغ خارج الرسوم</string>
+    <string name="wizard_bpu_add_line">إضافة سطر</string>
+    <string name="wizard_bpu_total_lot">المجموع خارج الرسوم للحصة %1$s :</string>
+    <string name="wizard_bpu_grand_total">المجموع العام خارج الرسوم (جميع الحصص)</string>
+    <string name="wizard_fin_local_prep">يتم تجهيز المبالغ محليًا ثم تشفيرها لحظة الإيداع النهائي.</string>
+
+    <!-- Step 5 -->
+    <string name="wizard_step5_title">كفالة التعهد</string>
+    <string name="wizard_step5_subtitle">أدخل معلومات الكفالة البنكية وأرفق الوثيقة الموقعة من البنك.</string>
+    <string name="wizard_caution_info">تضمن كفالة التعهد جدية عرضك. يجب أن تصدر عن مؤسسة بنكية معتمدة وتغطي فترة صلاحية العروض.</string>
+    <string name="wizard_caution_ref">مرجع الكفالة</string>
+    <string name="wizard_caution_bank">البنك المصدر</string>
+    <string name="wizard_caution_amount">مبلغ الكفالة (دج)</string>
+    <string name="wizard_caution_expiry">تاريخ انتهاء الصلاحية</string>
+    <string name="wizard_caution_emission">تاريخ الإصدار</string>
+    <string name="wizard_caution_summary">ملخص الكفالة</string>
+    <string name="wizard_caution_scan_label">نسخة ضوئية من الكفالة البنكية</string>
+    <string name="wizard_caution_dropzone_label">إرفاق وثيقة الكفالة (PDF)</string>
+    <string name="wizard_caution_dropzone_sub">نسخة ضوئية لرسالة الكفالة الموقعة من البنك — PDF، الحد الأقصى 10 ميغابايت</string>
+    <string name="wizard_caution_security_note">يتم إرسال وثيقة الكفالة مشفرة وسيتم التحقق منها عند فتح الأظرفة.</string>
+
+    <!-- Step 6 -->
+    <string name="wizard_step6_title">التحقق النهائي</string>
+    <string name="wizard_step6_subtitle">تحقق من ملفك. عند النقر على إيداع، سيتم تنفيذ المسار الآمن: الإنشاء، الرفع التقني، الرفع المالي المشفر، الكفالة، ثم التصديق.</string>
+    <string name="wizard_review_incomplete">الملف غير مكتمل. يرجى العودة إلى الخطوات السابقة لملء جميع الحقول الإلزامية.</string>
+    <string name="wizard_review_ao">المناقصة</string>
+    <string name="wizard_review_lot">الحصة المعنية</string>
+    <string name="wizard_not_provided">غير مقدمة</string>
+    <string name="wizard_review_ready">الملف مكتمل وجاهز للإيداع.</string>
+    
+    <string name="wizard_success_title">تم إيداع العرض بنجاح!</string>
+    <string name="wizard_success_desc">تم استلام عرضك %1$s، وختمه زمنيًا وتشفيره. سيتم إرسال وصل استلام إليك عبر إشعار.</string>
+    <string name="wizard_success_timestamp">الختم الزمني للخادم : %1$s</string>
+    <string name="wizard_success_btn_view">عرض تعهداتي</string>
+
+    <!-- Soumissions / Bids -->
+    <string name="bid_ref_label">المرجع: %1$s</string>
+    <string name="bid_status_draft">مسودة</string>
+    <string name="bid_status_submitted">تم إيداعها</string>
+    <string name="bid_status_received">مستلمة</string>
+    <string name="bid_status_evaluated">قيد التقييم</string>
+    <string name="bid_status_awarded">مقبولة</string>
+    <string name="bid_status_rejected">مرفوضة</string>
+    
+    <!-- Bid Wizard -->
+    <string name="wizard_title">تقديم عرض</string>
+    <string name="wizard_step_1_title">اختيار الحصة</string>
+    <string name="wizard_step_2_title">الوثائق الإدارية</string>
+    <string name="wizard_step_3_title">العرض التقني</string>
+    <string name="wizard_step_4_title">العرض المالي</string>
+    <string name="wizard_step_5_title">الكفالة البنكية</string>
+    <string name="wizard_step_6_title">مراجعة نهائية</string>
+
+    <string name="wizard_upload_label">تحميل</string>
+    <string name="wizard_file_hint">PDF، JPG أو PNG (أقصى حد 10 ميجابايت)</string>
+    <string name="wizard_status_compliant">مطابق</string>
+    <string name="wizard_status_missing">مفقود</string>
+    <string name="wizard_status_expired">منتهي</string>
+    <string name="wizard_ocr_scanning">جارٍ التحليل بالذكاء الاصطناعي...</string>
+    <string name="wizard_tech_desc">أودع ملفك التقني الكامل (دفتر الشروط مؤشر عليه، المذكرة التقنية، إلخ.)</string>
+    <string name="wizard_fin_secure_msg">أمن E2EE: سيتم تشفير عرضك المالي على هذا الجهاز قبل الإرسال.</string>
+    <string name="wizard_fin_item_desc">البيان</string>
+    <string name="wizard_fin_unit">الوحدة</string>
+    <string name="wizard_fin_qty">الكمية</string>
+    <string name="wizard_fin_price">سعر الوحدة</string>
+
+    <!-- ── WIZARD HARDCODED CLEANUP ── -->
+    <string name="wizard_lot_number">الحصة رقم %1$d</string>
+    <string name="wizard_lot_label_format">الحصة %1$d – %2$s</string>
+    <string name="wizard_lot_prefix">الحصة %1$s</string>
+    <string name="wizard_amount_dzd_format">%1$s د.ج</string>
+    <string name="wizard_prestation_number">الخدمة %1$d</string>
+    <string name="wizard_bpu_delete">حذف</string>
+    <string name="wizard_currency_dzd">د.ج</string>
+    <string name="wizard_caution_ref_hint">مثال: CAU-2024-00892</string>
+    <string name="wizard_caution_bank_hint">اسم البنك</string>
+    <string name="wizard_caution_amount_hint">مثال: 1 000 000</string>
+    <string name="wizard_date_hint">يوم/شهر/سنة</string>
+    <string name="wizard_ref_label_format">المرجع: %1$s</string>
+    
+    <!-- ── EMPTY STATE MESSAGES ── -->
+    <string name="mybids_no_results">لا توجد نتائج</string>
+    <string name="mybids_no_submissions">لا توجد عروض مقدمة</string>
+    <string name="settings_no_audit_logs">لا توجد سجلات نشاط</string>
+    <string name="security_no_sessions">لا توجد جلسات نشطة</string>
+    <string name="docs_no_documents">لا توجد مستندات</string>
+
+    <!-- ── STEP INDICATOR LABELS ── -->
+    <string name="wizard_step_label_ao">المناقصة</string>
+    <string name="wizard_step_label_tech">تقني</string>
+    <string name="wizard_step_label_fin">مالي</string>
+    <string name="wizard_step_label_caution">كفالة</string>
+    <string name="wizard_step_label_review">مراجعة</string>
+    <string name="wizard_error_unknown">خطأ غير معروف</string>
+
+    <!-- ── HOME SCREEN ── -->
+    <string name="home_hero_prefix">البوابة السيادية\nلـ</string>
+    <string name="home_hero_highlight">الصفقات العمومية</string>
+    <string name="home_hero_suffix"> في الجزائر</string>
+    <string name="home_hero_subtitle">تصفح جميع فرص الأعمال العمومية في الجزائر عبر منصة آمنة وشفافة ومركزية.</string>
+    <string name="home_search_placeholder">البحث عن صفقة…</string>
+    <string name="home_filter_sector">القطاع</string>
+    <string name="home_filter_wilaya">الولاية</string>
+    <string name="home_search_btn">← بحث</string>
+    <string name="home_stat_active_tenders">مناقصات نشطة</string>
+    <string name="home_stat_awarded">مُرسَاة</string>
+    <string name="home_stat_operators">مشغّلون</string>
+    <string name="home_explore_title">استكشف المنصة</string>
+    <string name="home_shortcut_stats_title">إحصائيات</string>
+    <string name="home_shortcut_stats_sub">عرض التحليلات</string>
+    <string name="home_shortcut_legal_title">الإطار القانوني</string>
+    <string name="home_shortcut_legal_sub">القانون 23-12 والشروط</string>
+    <string name="home_shortcut_help_title">المساعدة</string>
+    <string name="home_shortcut_help_sub">دعم على مدار الساعة</string>
+    <string name="home_latest_tenders">آخر المناقصات</string>
+    <string name="home_view_all">← عرض الكل</string>
+    <string name="home_view_details">عرض التفاصيل</string>
+    <string name="home_deadline_unknown">تاريخ غير معروف</string>
+    <string name="home_deadline_today">اليوم</string>
+    <string name="home_deadline_tomorrow">غداً</string>
+    <string name="home_deadline_days">خلال %1$d يوم</string>
+    <string name="home_lots_count">%1$d حصة</string>
+    <string name="home_empty_tenders">لا توجد مناقصات متاحة</string>
+    <string name="home_retry">إعادة المحاولة</string>
+    <string name="home_pillars_title">ركائز الميزان</string>
+    <string name="home_pillars_subtitle">بنية تحتية سيادية للمشتريات العمومية الشفافة والفعّالة في الجزائر.</string>
+    <string name="home_pillar1_title">شفافية كاملة</string>
+    <string name="home_pillar1_desc">كل خطوة في عملية الشراء مُتابَعة ومرئية للأطراف المعتمدة، لضمان منافسة عادلة.</string>
+    <string name="home_pillar2_title">أمان E2EE</string>
+    <string name="home_pillar2_desc">العروض المشفرة من طرف إلى طرف والاستضافة السيادية تحمي المعلومات التجارية الحساسة.</string>
+    <string name="home_pillar3_title">تحليل بالذكاء الاصطناعي</string>
+    <string name="home_pillar3_desc">تحليلات متقدمة وكشف عن الاتجاهات لتحسين الإنفاق العام وتحديد الفرص.</string>
+    <string name="home_filter_sector_hint">القطاع…</string>
+    <string name="home_filter_wilaya_hint">الولاية…</string>
+
+    <!-- ══ NOTIFICATIONS — add to values-ar/strings.xml ══ -->
+    <string name="notif_title">الإشعارات</string>
+    <string name="notif_mark_all_read">تحديد الكل كمقروء</string>
+    <string name="notif_empty">لا توجد إشعارات</string>
+
+    <!-- ── STATISTICS SCREEN ── -->
+    <string name="stats_title">الإحصائيات</string>
+    <string name="stats_refresh">تحديث</string>
+    <string name="stats_back">رجوع</string>
+    <string name="stats_retry">إعادة المحاولة</string>
+    <string name="stats_section_overview">نظرة عامة</string>
+    <string name="stats_section_by_status">حسب الحالة</string>
+    <string name="stats_section_monthly">المنشورات الشهرية</string>
+    <string name="stats_section_by_sector">حسب قطاع النشاط</string>
+    <string name="stats_section_procedure">أنواع الإجراءات</string>
+    <string name="stats_section_highlights">أبرز المؤشرات</string>
+    <string name="stats_label_active">نشطة</string>
+    <string name="stats_label_attributed">مُرسَاة</string>
+    <string name="stats_label_expiring">تنتهي &lt; 7أيام</string>
+    <string name="stats_label_cancelled">ملغاة</string>
+    <string name="stats_top_wilaya">الولاية الأكثر نشاطاً</string>
+    <string name="stats_top_wilaya_count">%1$d مناقصة</string>
+    <string name="stats_avg_amount">متوسط المبلغ التقديري</string>
+    <string name="stats_currency">دج</string>
+    <string name="stats_empty_sector">لا توجد بيانات للقطاع</string>
+    <string name="stats_empty_procedure">لا توجد بيانات للإجراء</string>
+    <string name="stats_status_publie">منشور</string>
+    <string name="stats_status_en_cours">جارٍ</string>
+    <string name="stats_status_ouverture_plis">فتح الأظرفة</string>
+    <string name="stats_status_evaluation">تقييم</string>
+    <string name="stats_status_attribue">مُرسَى</string>
+    <string name="stats_status_annule">ملغى</string>
+    <string name="stats_status_cloture">مغلق</string>
+</resources>

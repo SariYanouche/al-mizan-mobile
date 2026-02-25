@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Al-Mizan</string>
+    <string name="app_tagline">SOVEREIGN PROCUREMENT</string>
+    <string name="footer_ministry">MINISTRY OF FINANCE</string>
+
+    <!-- ── COMMON ── -->
+    <string name="lang_french">FRANÇAIS</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="lang_english">ENGLISH</string>
+    <string name="password_weak">WEAK</string>
+    <string name="password_medium">MEDIUM</string>
+    <string name="password_strong">STRONG</string>
+    <string name="e2ee_secured">E2EE SECURED</string>
+    <string name="bank_encryption">BANK ENCRYPTION</string>
+    <string name="err_email_invalid">Invalid email format</string>
+    <string name="err_phone_invalid">Invalid Algerian number (e.g. 0555 123 456)</string>
+    <string name="err_passwords_no_match">Passwords do not match</string>
+    <string name="passwords_match">Passwords match</string>
+
+    <!-- ── LOGIN SCREEN ── -->
+    <string name="login_title">Sign In</string>
+    <string name="login_welcome">Welcome back! Please enter your credentials to access your dashboard.</string>
+    <string name="login_email_label">Email Address</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_remember_me">Remember me</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_sign_in_btn">Sign In</string>
+    <string name="login_or_divider">OR</string>
+    <string name="login_biometrics">Sign in with Biometrics</string>
+    <string name="login_no_account">Don\'t have an account yet?</string>
+    <string name="login_register">Register here</string>
+    <string name="password_show">Afficher</string>
+    <string name="password_hide">Masquer</string>
+
+
+
+    <!-- ── VERIFICATION SCREEN ── -->
+    <string name="verif_title">Two-Step Verification</string>
+    <string name="verif_subtitle">A 6-digit verification code has been sent to your registered professional email address.</string>
+    <string name="verif_expires_label">CODE EXPIRES IN</string>
+    <string name="verif_verify_btn">Verify and Access</string>
+    <string name="verif_no_code">Didn\'t receive the code?</string>
+    <string name="verif_resend">Resend code</string>
+    <string name="verif_footer_1">AL-MIZAN SOVEREIGN PLATFORM</string>
+    <string name="verif_footer_2">Secure Access — Ministry of Finance</string>
+    <string name="verif_logout">Log Out</string>
+    <string name="verif_notifications">Notifications</string>
+    <string name="verif_no_notifs">No notifications</string>
+
+    <!-- ── FORGOT PASSWORD SCREEN ── -->
+    <string name="fp_title">Reset Password</string>
+    <string name="fp_subtitle">Enter your registered email address and we will send you instructions to reset your password securely.</string>
+    <string name="fp_email_label">Email Address</string>
+    <string name="fp_email_placeholder">nom.prenom@domain.dz</string>
+    <string name="fp_send_btn">Send Reset Code</string>
+    <string name="fp_remembered">Remembered your password?</string>
+    <string name="fp_sign_in">Sign in here</string>
+
+    <!-- ── SET NEW PASSWORD SCREEN ── -->
+    <string name="snp_title">New Password</string>
+    <string name="snp_subtitle">Enter the recovery code received by email, then set your new password.</string>
+    <string name="snp_recovery_label">RECOVERY CODE</string>
+    <string name="snp_new_pass_label">NEW PASSWORD</string>
+    <string name="snp_confirm_label">CONFIRM PASSWORD</string>
+    <string name="snp_new_pass_ph">Minimum 8 characters</string>
+    <string name="snp_confirm_ph">Repeat password</string>
+    <string name="snp_save_btn">Save New Password</string>
+    <string name="snp_password_mismatch">Passwords do not match</string>
+
+    <!-- ── ACCOUNT LOCKED SCREEN ── -->
+    <string name="al_title">Account Locked</string>
+    <string name="al_subtitle">For your security, your account has been temporarily locked due to multiple unsuccessful login attempts.</string>
+    <string name="al_try_again">Please try again in</string>
+    <string name="al_reset_btn">Reset Password via Email</string>
+    <string name="al_contact_support">Contact Support</string>
+
+    <!-- ── REGISTRATION STEP 1 ── -->
+    <string name="reg1_step_label">STEP 1 OF 3</string>
+    <string name="reg1_section_title">Organisation Details</string>
+    <string name="reg1_section_sub">General information &amp; tax identifiers</string>
+    <string name="reg1_field_org_name">COMPANY NAME</string>
+    <string name="reg1_field_nif">NIF CODE</string>
+    <string name="reg1_field_nis">NIS NUMBER</string>
+    <string name="reg1_field_rc">COMMERCIAL REGISTER NUMBER (RC)</string>
+    <string name="reg1_ph_org">e.g. Al-Mizan Solutions Sarl</string>
+    <string name="reg1_ph_nif">15-digit NIF</string>
+    <string name="reg1_ph_nis">NIS</string>
+    <string name="reg1_ph_rc">Enter RC number</string>
+    <string name="reg1_secure_title">Sovereign Secured Data</string>
+    <string name="reg1_secure_body">Your organisation\'s identity data is encrypted and managed under sovereign protocols.</string>
+    <string name="reg1_continue_btn">Continue to Step 2  →</string>
+    <string name="reg1_back_label">← Back to home</string>
+    <string name="reg1_terms_text">I agree to the </string>
+    <string name="reg1_terms_link">Terms of Use</string>
+    <string name="reg1_and"> and the </string>
+    <string name="reg1_privacy_link">Privacy Policy</string>
+
+    <!-- ── REGISTRATION STEP 2 ── -->
+    <string name="reg2_step_label">STEP 2 OF 3</string>
+    <string name="reg2_section_title">Company Credentials</string>
+    <string name="reg2_section_sub">Create your secure login credentials</string>
+    <string name="reg2_phone_label">COMPANY PHONE NUMBER</string>
+    <string name="reg2_email_label">PROFESSIONAL EMAIL (LOGIN ID)</string>
+    <string name="reg2_password_label">PASSWORD</string>
+    <string name="reg2_confirm_label">CONFIRM PASSWORD</string>
+    <string name="reg2_ph_phone">+213 555 123 456</string>
+    <string name="reg2_ph_email">name@company.com</string>
+    <string name="reg2_admin_title">Primary Administrator</string>
+    <string name="reg2_admin_body">This account will have full administrative access to manage the organisation\'s profile.</string>
+    <string name="reg2_identity">IDENTITY VERIFICATION REQUIRED</string>
+    <string name="reg2_continue_btn">Continue to Step 3  →</string>
+    <string name="reg2_back_label">← Back to organisation details</string>
+    <string name="reg2_nom_label">Last Name</string>
+    <string name="reg2_ph_nom">Enter your last name</string>
+    <string name="reg2_prenom_label">First Name</string>
+    <string name="reg2_ph_prenom">Enter your first name</string>
+
+    <!-- ── REGISTRATION STEP 3 ── -->
+    <string name="reg3_step_label">STEP 3 OF 3</string>
+    <string name="reg3_section_title">Document Verification</string>
+    <string name="reg3_section_sub">Upload your legal document. Our AI will analyse it automatically.</string>
+    <string name="reg3_upload_title">Upload a Document</string>
+    <string name="reg3_upload_sub">PDF, JPG or PNG · Max 10 MB</string>
+    <string name="reg3_upload_btn">SELECT FILE</string>
+    <string name="reg3_analyzing">AI Analysis in progress…</string>
+    <string name="reg3_analyzing_msg">Our AI is extracting and verifying document information.</string>
+    <string name="reg3_analyzed">Analysis complete</string>
+    <string name="reg3_analyzed_msg">Information has been extracted successfully.</string>
+    <string name="reg3_change_doc">Change document</string>
+    <string name="reg3_privacy_title">Privacy Guarantee</string>
+    <string name="reg3_privacy_body">Your documents are encrypted and accessible only by authorised verification staff.</string>
+    <string name="reg3_submit_btn">Submit Registration</string>
+    <string name="reg3_back_label">← Back to credentials</string>
+    <string name="reg_success_title">Registration Successful!</string>
+    <string name="reg_success_body">Your account has been created</string>
+    <string name="reg_success_btn">Go to Login</string>
+
+    <!-- ── COMMON FOOTER / BACK ── -->
+    <string name="back_to_welcome">← Back to home</string>
+    <string name="back_to_org_details">← Back to organisation details</string>
+    <string name="back_to_credentials">← Back to credentials</string>
+    <string name="sovereign_footer">© 2024 AL-MIZAN SOVEREIGN PLATFORM</string>
+
+    <!-- Bottom bar tabs -->
+    <string name="tab_home">Home</string>
+    <string name="tab_search">Tenders</string>
+    <string name="tab_my_bids">My Bids</string>
+    <string name="tab_profile">Profile</string>
+
+    <!-- Top bar -->
+    <string name="topbar_verified">✓ Verified</string>
+    <string name="topbar_tier">OPEN</string>
+    <string name="topbar_disconnect">Disconnect</string>
+    <string name="topbar_notifications">Notifications</string>
+    <string name="topbar_change_language">Language</string>
+
+    <!-- Advanced Filter -->
+    <string name="filter_title">Advanced Filters</string>
+    <string name="filter_reset">Reset</string>
+    <string name="filter_market_sector">Market Sector</string>
+    <string name="filter_procedure_type">Procedure Type</string>
+    <string name="filter_procedure_hint">Select a type</string>
+    <string name="filter_wilaya_search">Search for wilaya</string>
+    <string name="filter_tender_status">Tender Status</string>
+    <string name="filter_bank_guarantee">Bank Guarantee Required</string>
+    <string name="filter_deadline_range">Deadline Range</string>
+    <string name="filter_deadline_from">From</string>
+    <string name="filter_deadline_to">To</string>
+    <string name="filter_show_results">Show Results</string>
+
+    <!-- Sectors -->
+    <string name="sector_construction">Construction</string>
+    <string name="sector_it">Information Technology</string>
+    <string name="sector_health">Health</string>
+    <string name="sector_education">Education</string>
+    <string name="sector_energy">Energy</string>
+    <string name="sector_transport">Transport</string>
+
+    <!-- Procedure types -->
+    <string name="proc_open">Open Tender</string>
+    <string name="proc_restricted">Restricted Tender</string>
+    <string name="proc_negotiated">Negotiated Procedure</string>
+    <string name="proc_direct">Direct Agreement</string>
+    <string name="proc_competitive">Competitive Consultation</string>
+
+    <!-- Tender status -->
+    <string name="status_open">Open</string>
+    <string name="status_closed">Closed</string>
+    <string name="status_evaluation">Under Evaluation</string>
+    <string name="status_awarded">Awarded</string>
+
+    <!-- ── PROFILE SCREEN ── -->
+    <string name="profile_loading">Loading profile…</string>
+    <string name="profile_retry">Retry</string>
+    <string name="profile_section_org">ORGANISATION</string>
+    <string name="profile_section_personal">PERSONAL INFORMATION</string>
+    <string name="profile_section_account">MY ACCOUNT</string>
+    <string name="profile_section_danger">DANGER ZONE</string>
+    <string name="profile_field_fullname">Full name</string>
+    <string name="profile_edit_profile">Edit profile</string>
+    <string name="profile_change_password">Change password</string>
+    <string name="profile_delete_account">Delete account</string>
+
+    <!-- Logout dialog -->
+    <string name="profile_logout_confirm_title">Log out</string>
+    <string name="profile_logout_confirm_body">Are you sure you want to log out of the Al-Mizan platform?</string>
+    <string name="profile_logout_confirm_btn">Log out</string>
+    <string name="profile_cancel">Cancel</string>
+
+    <!-- Edit profile -->
+    <string name="profile_edit_notice">Only your name and phone number can be modified. For changes to organisation identifiers, please contact support.</string>
+    <string name="profile_field_required">This field is required</string>
+    <string name="profile_save_btn">Save changes</string>
+    <string name="profile_update_success">Profile updated successfully!</string>
+
+    <!-- Change password -->
+    <string name="profile_password_notice">For your security, your session will be maintained after the password change. A confirmation email will be sent to you.</string>
+    <string name="profile_current_password">CURRENT PASSWORD</string>
+    <string name="profile_password_changed">Password changed successfully!</string>
+
+    <!-- Language screen -->
+    <string name="profile_language_title">Choose language</string>
+    <string name="profile_language_subtitle">Select the display language for the Al-Mizan platform.</string>
+    <string name="profile_language_apply">Apply</string>
+
+    <!-- Delete account -->
+    <string name="profile_delete_title">Delete account</string>
+    <string name="profile_delete_subtitle">This action is irreversible. All your data will be permanently deleted from the Al-Mizan platform.</string>
+    <string name="profile_delete_consequences_title">WHAT WILL BE DELETED</string>
+    <string name="profile_delete_con1">Your profile and personal information</string>
+    <string name="profile_delete_con2">All your bids and ongoing applications</string>
+    <string name="profile_delete_con3">Access to the Al-Mizan sovereign platform</string>
+    <string name="profile_delete_con4">The history of all your transactions</string>
+    <string name="profile_delete_type_confirm">Type "%1$s" to confirm</string>
+    <string name="profile_delete_confirm_word">DELETE</string>
+    <string name="profile_delete_btn">Permanently delete</string>
+    <string name="profile_delete_dialog_title">Final confirmation</string>
+    <string name="profile_delete_dialog_body">Your account will be permanently deleted. This action is irreversible and cannot be undone.</string>
+    <!-- ── MY BIDS SCREEN ── -->
+    <string name="mybids_tab_purchased_cdcs">Purchased CDCs</string>
+    <string name="mybids_tab_my_submissions">My Submissions</string>
+
+    <!-- Filters -->
+    <string name="mybids_filter_hide_submitted">Hide Submitted</string>
+    <string name="mybids_filter_closing_soon">Closing Soon</string>
+    <string name="mybids_filter_all">All</string>
+    <string name="mybids_filter_active_bids">Active Bids</string>
+    <string name="mybids_filter_results_appeals">Results &amp; Appeals</string>
+
+    <!-- Search and Sort -->
+    <string name="mybids_search_tenders">Search tenders…</string>
+    <string name="mybids_search_submissions">Search submissions or appeals…</string>
+    <string name="mybids_sort">Sort</string>
+
+    <!-- Purchased CDC Card -->
+    <string name="mybids_tender">Tender</string>
+    <string name="mybids_deadline">Deadline</string>
+    <string name="mybids_purchased">Purchased</string>
+    <string name="mybids_last_modification">Last modification</string>
+    <string name="mybids_bid_submitted">Bid Submitted</string>
+    <string name="mybids_read_cdc">Read CDC</string>
+    <string name="mybids_start_bid_wizard">Start Bid Wizard</string>
+    <string name="mybids_resume_bid">Resume Bid</string>
+    <string name="mybids_track_bid">Track Bid</string>
+
+    <!-- Submission Card -->
+    <string name="mybids_ref">REF</string>
+    <string name="mybids_submitted">Submitted</string>
+    <string name="mybids_score">Score</string>
+    <string name="mybids_value">Value</string>
+    <string name="mybids_days_left_appeal">Days left to file a legal appeal</string>
+    <string name="mybids_track_status">Track Status</string>
+    <string name="mybids_view_results">View Results</string>
+    <string name="mybids_file_appeal">File Appeal</string>
+    <string name="mybids_view_contract_details">View Contract Details</string>
+
+    <!-- Submission Status -->
+    <string name="mybids_status_in_evaluation">IN EVALUATION</string>
+    <string name="mybids_status_not_retained">NOT RETAINED</string>
+    <string name="mybids_status_awarded">AWARDED</string>
+
+    <!-- ── BID WIZARD ── -->
+    <!-- Top Bar & Progress -->
+    <string name="wizard_step_of">Step %1$d of %2$d</string>
+    <string name="wizard_save_exit">Save &amp; Exit</string>
+    <string name="wizard_overall_progress">OVERALL PROGRESS</string>
+    <string name="wizard_progress">%1$d%% complete</string>
+
+    <!-- Bottom Buttons -->
+    <string name="wizard_confirm_continue">Confirm &amp; Continue</string>
+    <string name="wizard_confirm_technical_upload">Confirm Technical Upload</string>
+    <string name="wizard_confirm_financial">Confirm Financial Offer</string>
+    <string name="wizard_next_step">Next Step</string>
+    <string name="wizard_submit_bid_final">Submit Bid</string>
+
+    <!-- Step 1: Lot Selection -->
+    <string name="wizard_available_lots">Available lots in this tender</string>
+    <string name="wizard_selected">Selected</string>
+    <string name="wizard_available">Available</string>
+
+    <!-- Step 2: Technical Offer -->
+    <string name="wizard_upload_technical_pdf">Click to upload your technical PDF</string>
+    <string name="wizard_max_file_size">Maximum file size: 50 MB</string>
+    <string name="wizard_uploaded_documents">UPLOADED DOCUMENTS</string>
+    <string name="wizard_secure_handling_title">Secure Document Handling</string>
+    <string name="wizard_secure_handling_desc">Your document will be encrypted and timestamped. The hash will be recorded to ensure file integrity.</string>
+
+    <!-- Step 3: Financial Offer -->
+    <string name="wizard_amount_ht">Amount excl. VAT (DZD)</string>
+    <string name="wizard_amount_placeholder">Enter amount excluding tax</string>
+    <string name="wizard_tva">VAT (%)</string>
+    <string name="wizard_total_ttc">Total incl. VAT</string>
+
+    <!-- Step 4: Bank Guarantee -->
+    <string name="wizard_guarantee_amount">Guarantee Amount (DZD)</string>
+    <string name="wizard_guarantee_amount_placeholder">Enter guarantee amount</string>
+    <string name="wizard_issuing_bank">Issuing Bank</string>
+    <string name="wizard_bank_placeholder">Bank name</string>
+    <string name="wizard_guarantee_reference">Guarantee Reference</string>
+    <string name="wizard_reference_placeholder">Reference number</string>
+    <string name="wizard_upload_guarantee">Upload bank guarantee attestation</string>
+    <string name="wizard_guarantee_validity_note">The guarantee must be valid for at least 90 days after the submission deadline.</string>
+
+    <!-- Step 5: Final Review -->
+    <string name="wizard_summary_details">Submission Summary</string>
+    <string name="wizard_lot_selected">Lot Selected</string>
+    <string name="wizard_financial_offer">Financial Offer</string>
+    <string name="wizard_guarantee">Guarantee</string>
+    <string name="wizard_provided">Provided</string>
+    <string name="wizard_certification_text">I certify that all information provided is accurate and complete. I understand that any false statement may result in disqualification of my bid and legal prosecution.</string>
+
+    <!-- ── BID SUBMITTED SCREEN ── -->
+    <string name="submission_title">Bid Submission</string>
+    <string name="submission_secure">Secure Submission</string>
+    <string name="submission_secure_desc">Your bid has been encrypted and officially recorded on the sovereign registry.</string>
+    <string name="submission_transaction_id">TRANSACTION ID</string>
+    <string name="submission_tender_ref">Tender Reference</string>
+    <string name="submission_timestamp">OFFICIAL TIMESTAMP</string>
+    <string name="submission_status_label">Status</string>
+    <string name="submission_sealed_stored">SEALED &amp; STORED</string>
+    <string name="submission_guarantee_title">Sovereign Guarantee</string>
+    <string name="submission_guarantee_desc">This transaction is protected by the National Digital Procurement Protocol. No modifications are possible after this point.</string>
+    <string name="submission_download_receipt">Download Official Receipt</string>
+    <string name="submission_return_dashboard">Return to Dashboard</string>
+
+    <!-- ── BID STATUS SCREEN ── -->
+    <string name="status_title">Bid Status</string>
+    <string name="status_crypto_receipt">Cryptographic Receipt</string>
+    <string name="status_official_timestamp">Official Timestamp</string>
+    <string name="status_tech_hash">Tech Hash</string>
+    <string name="status_fin_offer">Fin. Offer</string>
+    <string name="status_encrypted_e2ee">Encrypted E2EE</string>
+    <string name="status_live_progress">Live Progress</string>
+    <string name="status_bid_submitted">Bid Submitted &amp; Sealed</string>
+    <string name="status_bid_submitted_desc">Submission portal closed successfully.</string>
+    <string name="status_plis_opened">Plis Opened by Commission</string>
+    <string name="status_plis_opened_desc">Financial offer decrypted and verified.</string>
+    <string name="bid_status_evaluation">Technical &amp; Financial Evaluation</string>
+    <string name="status_evaluation_desc">Currently under review by the committee.</string>
+    <string name="status_attribution">Provisional Award</string>
+    <string name="status_attribution_desc">Pending evaluation results.</string>
+    <string name="status_active">ACTIVE</string>
+    <string name="status_contact_support">Contact Support for this Bid</string>
+
+    <!-- ── EVALUATION RESULTS SCREEN ── -->
+    <string name="results_title">Evaluation Results</string>
+    <string name="results_not_retained">Not Retained</string>
+    <string name="results_submission_id">Submission ID</string>
+    <string name="results_your_scores">Your Scores</string>
+    <string name="results_tech">Tech</string>
+    <string name="results_financial">Financial</string>
+    <string name="results_total">Total</string>
+    <string name="results_motif">Motif</string>
+    <string name="results_attribution">Provisional Award</string>
+    <string name="results_awarded_to">Awarded to</string>
+    <string name="results_winning_score">Winning Score</string>
+    <string name="results_awarded_amount">Awarded Amount</string>
+    <string name="results_days_left_appeal">Days left to file an appeal</string>
+    <string name="results_file_appeal">File Legal Appeal (Recours)</string>
+
+    <!-- ── FILE APPEAL SCREEN ── -->
+    <string name="appeal_title">File Appeal</string>
+    <string name="appeal_warning">Appeals must be submitted within 10 days of the provisional attribution notice. Frivolous appeals may result in penalties.</string>
+    <string name="appeal_justification_label">Legal or Technical Justification</string>
+    <string name="appeal_justification_placeholder">Detail the specific articles of the CDC or Loi 23-12 that were violated…</string>
+    <string name="appeal_upload_label">Upload Evidence (Optional)</string>
+    <string name="appeal_upload_prompt">Tap to upload PDF/ZIP</string>
+    <string name="appeal_max_size">Maximum file size: 10MB</string>
+    <string name="appeal_certification">I declare that the information provided is accurate and I am authorized to file this appeal on behalf of the company.</string>
+    <string name="appeal_submit">Submit Appeal to Commission</string>
+    <string name="appeal_success_title">Appeal Submitted</string>
+    <string name="appeal_success_desc">Your appeal has been officially recorded and transmitted to the evaluation committee.</string>
+    <string name="appeal_ao_label">Related Tender (AO)</string>
+    <string name="appeal_select_ao">Select a tender</string>
+    <string name="appeal_attribution_label">Contested Provisional Award</string>
+    <string name="appeal_select_attribution">Select an attribution</string>
+    <string name="appeal_attribution_item_format">Attribution of %1$s — %2$s DZD</string>
+    <string name="appeal_processing">Processing…</string>
+    <string name="appeal_back_to_list">Back to my appeals</string>
+
+    <!-- ── PROFILE SCREEN ── -->
+    <string name="profile_verified">VERIFIED</string>
+    <string name="profile_eligible">ELIGIBLE</string>
+    <string name="profile_blacklisted">BLACKLISTED</string>
+    <string name="profile_blacklist_reason">Blacklisting Reason</string>
+    <string name="profile_close">Close</string>
+    <string name="profile_personal_info">Personal Information</string>
+    <string name="profile_edit">Edit</string>
+    <string name="profile_full_name">Full Name</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_phone">Phone</string>
+    <string name="profile_language">Language</string>
+    <string name="profile_organisation_info">Organisation Information</string>
+    <string name="profile_nif">NIF</string>
+    <string name="profile_nis">NIS</string>
+    <string name="profile_rc">RC</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_wilaya">Wilaya</string>
+    <string name="profile_company_type">Company Type</string>
+    <string name="profile_request_update">Request Update</string>
+    <string name="profile_operational">Operational Profile</string>
+    <string name="profile_categories">Professional Categories</string>
+    <string name="profile_qualifications">Qualifications</string>
+    <string name="profile_nav_documents">Administrative Documents</string>
+    <string name="profile_nav_security">Security &amp; MFA</string>
+    <string name="profile_nav_settings">Settings &amp; Audit</string>
+
+    <!-- ── DOCUMENTS SCREEN ── -->
+    <string name="docs_title">Administrative Documents</string>
+    <string name="docs_back">Back</string>
+    <string name="docs_upload_new">Upload New Document</string>
+    <string name="docs_summary_title">Documents Overview</string>
+    <string name="docs_status_valid">VALID</string>
+    <string name="docs_status_expired">EXPIRED</string>
+    <string name="docs_status_ai_flag">AI FLAG</string>
+    <string name="docs_expiration">Expiration</string>
+    <string name="docs_size">Size</string>
+    <string name="docs_ai_score">AI Score</string>
+    <string name="docs_ai_anomaly_detected">AI detected an anomaly</string>
+    <string name="docs_confidence">Confidence</string>
+    <string name="docs_anomalies">Anomalies</string>
+    <string name="docs_update_btn">Update Document</string>
+    <string name="docs_type_nif">Tax Identification Number (NIF)</string>
+    <string name="docs_type_nis">Statistical Identification Number (NIS)</string>
+    <string name="docs_type_rc">Trade Register (RC)</string>
+    <string name="docs_type_cnas">CNAS Certificate</string>
+    <string name="docs_type_casnos">CASNOS Certificate</string>
+    <string name="docs_type_bilan">Financial Statement</string>
+
+    <!-- ── SECURITY SCREEN ── -->
+    <string name="security_title">Security &amp; Authentication</string>
+    <string name="security_back">Back</string>
+    <string name="security_password_title">Password</string>
+    <string name="security_password_changed">Password last changed %1$d days ago</string>
+    <string name="security_change_password">Change</string>
+    <string name="security_mfa_title">Two-Factor Authentication</string>
+    <string name="security_mfa_active">Active</string>
+    <string name="security_mfa_inactive">Inactive</string>
+    <string name="security_active_sessions">Active Sessions</string>
+    <string name="security_current_device">Current Device</string>
+    <string name="security_revoke_session">Revoke Session</string>
+    <string name="security_logout_all">Log out of all other devices</string>
+
+    <!-- ── SETTINGS SCREEN ── -->
+    <string name="settings_title">Settings &amp; Audit</string>
+    <string name="settings_back">Back</string>
+    <string name="settings_notification_channels">Notification Channels</string>
+    <string name="settings_notification_categories">Notification Categories</string>
+    <string name="settings_audit_log">Activity Audit Log</string>
+
+    <!-- Notification Channels -->
+    <string name="settings_channel_email">Email</string>
+    <string name="settings_channel_sms">SMS</string>
+    <string name="settings_channel_push">Push Notifications</string>
+
+    <!-- Notification Categories -->
+    <string name="settings_cat_publication">New Tenders</string>
+    <string name="settings_cat_publication_desc">Alerts for new tender publications</string>
+    <string name="settings_cat_evaluation">Evaluation Results</string>
+    <string name="settings_cat_evaluation_desc">Score and decision notifications</string>
+    <string name="settings_cat_attribution">Provisional Awards</string>
+    <string name="settings_cat_attribution_desc">Contract award alerts</string>
+    <string name="settings_cat_recours">Appeals</string>
+    <string name="settings_cat_recours_desc">Appeal procedure updates</string>
+    <string name="settings_cat_systeme">System Alerts</string>
+    <string name="settings_cat_systeme_desc">Maintenance and security updates</string>
+
+    <!-- Audit Log Actions -->
+    <string name="settings_action_login">Logged In</string>
+    <string name="settings_action_logout">Logged Out</string>
+    <string name="settings_action_upload_doc">Uploaded Document</string>
+    <string name="settings_action_submit_bid">Submitted Bid</string>
+    <string name="settings_action_update_profile">Updated Profile</string>
+    <string name="settings_action_download_receipt">Downloaded Receipt</string>
+    <string name="settings_action_view_results">Viewed Results</string>
+    <string name="settings_action_file_appeal">Filed Appeal</string>
+    <string name="settings_action_change_password">Changed Password</string>
+
+    <!-- ── BID WIZARD OPERATEUR (6 STEPS) ── -->
+    <string name="wizard_cancel">Cancel</string>
+    <string name="wizard_back">Back</string>
+    <string name="wizard_next">Continue</string>
+    <string name="wizard_submit_final">Submit Bid</string>
+    <string name="wizard_submit_processing">Submitting...</string>
+    
+    <!-- Step 1 -->
+    <string name="wizard_step1_title">Tender Selection</string>
+    <string name="wizard_step1_subtitle">Choose the tender you wish to bid on, then select the relevant lots.</string>
+    <string name="wizard_search_ao">Search for a tender...</string>
+    <string name="wizard_no_ao_found">No tender found</string>
+    <string name="wizard_selected_badge">Selected</string>
+    <string name="wizard_limit">Deadline</string>
+    <string name="wizard_select_lot">Select the relevant lot</string>
+    <string name="wizard_estimated_amount">Estimated amount :</string>
+
+    <!-- Step 2 -->
+    <string name="wizard_step2_title">Administrative Documents</string>
+    <string name="wizard_step2_subtitle">Upload and verify the mandatory documents for your submission file.</string>
+    <string name="wizard_blocking_docs">%1$d blocking document(s) must be updated before continuing.</string>
+    <string name="wizard_doc_conforme">Compliant</string>
+    <string name="wizard_doc_expire">Expired</string>
+    <string name="wizard_doc_manquant">Missing</string>
+    <string name="wizard_doc_charge">Uploaded</string>
+    <string name="wizard_doc_expires_on">Expires on %1$s</string>
+    <string name="wizard_upload">Upload</string>
+    <string name="wizard_replace">Replace</string>
+    <string name="wizard_admin_docs_formats">* Mandatory documents. Accepted formats: PDF, JPG, PNG (max 10 MB).</string>
+
+    <!-- Step 3 -->
+    <string name="wizard_step3_title">Technical Offer</string>
+    <string name="wizard_step3_subtitle">Deposit your technical offer: the specifications document duly filled, signed, and stamped for the selected lot.</string>
+    <string name="wizard_lots_concerned">Lots concerned</string>
+    <string name="wizard_tech_content">Expected content of the technical file</string>
+    <string name="wizard_tech_content_1">Specifications document filled and initialed on every page</string>
+    <string name="wizard_tech_content_2">Technical memorandum justifying human and material resources</string>
+    <string name="wizard_tech_content_3">References of similar projects (if required)</string>
+    <string name="wizard_tech_content_4">Estimated execution schedule</string>
+    <string name="wizard_tech_content_5">Project team organizational chart</string>
+    <string name="wizard_tech_file_label">Technical offer file</string>
+    <string name="wizard_tech_dropzone_label">Drop the technical file (PDF)</string>
+    <string name="wizard_tech_dropzone_sub">Single document gathering all technical parts — PDF, max 50 MB</string>
+
+    <!-- Step 4 -->
+    <string name="wizard_step4_title">Financial Offer (BPU)</string>
+    <string name="wizard_step4_subtitle">Enter your unit price schedule. Amounts will be encrypted before transmission.</string>
+    <string name="wizard_fin_security_title">Financial offer security</string>
+    <string name="wizard_fin_security_desc">Your financial offer will be client-side encrypted then transmitted as an encrypted file to the submission service.</string>
+    <string name="wizard_total_ht">Total Excl. Tax</string>
+    <string name="wizard_bpu_designation">Designation</string>
+    <string name="wizard_bpu_unit">Unit</string>
+    <string name="wizard_bpu_qty">Qty</string>
+    <string name="wizard_bpu_unit_price">Unit Price</string>
+    <string name="wizard_bpu_total_ht">Amount</string>
+    <string name="wizard_bpu_add_line">Add a line</string>
+    <string name="wizard_bpu_total_lot">TOTAL EXCL. TAX LOT %1$s :</string>
+    <string name="wizard_bpu_grand_total">Grand total Excl. Tax (all lots)</string>
+    <string name="wizard_fin_local_prep">Amounts are prepared locally then encrypted upon final submission.</string>
+
+    <!-- Step 5 -->
+    <string name="wizard_step5_title">Bid Bond</string>
+    <string name="wizard_step5_subtitle">Enter your bank guarantee information and attach the document signed by your bank.</string>
+    <string name="wizard_caution_info">The bid bond guarantees the seriousness of your offer. It must be issued by an approved bank and cover the offer validity period.</string>
+    <string name="wizard_caution_ref">Guarantee Reference</string>
+    <string name="wizard_caution_bank">Issuing Bank</string>
+    <string name="wizard_caution_amount">Guarantee Amount (DZD)</string>
+    <string name="wizard_caution_expiry">Expiration Date</string>
+    <string name="wizard_caution_emission">Issue Date</string>
+    <string name="wizard_caution_summary">Guarantee Summary</string>
+    <string name="wizard_caution_scan_label">Bank Guarantee Scan</string>
+    <string name="wizard_caution_dropzone_label">Attach the guarantee document (PDF)</string>
+    <string name="wizard_caution_dropzone_sub">Scanned copy of the guarantee letter signed by the bank — PDF, max 10 MB</string>
+    <string name="wizard_caution_security_note">The guarantee document is transmitted encrypted and will be verified during the bids opening.</string>
+
+    <!-- Step 6 -->
+    <string name="wizard_step6_title">Final Review</string>
+    <string name="wizard_step6_subtitle">Review your file. By clicking Submit, the secure workflow executes: creation, tech upload, encrypted fin upload, guarantee, then validation.</string>
+    <string name="wizard_review_incomplete">The file is incomplete. Return to the previous steps to fill in all mandatory fields.</string>
+    <string name="wizard_review_ao">Tender</string>
+    <string name="wizard_review_lot">Bid Lot</string>
+    <string name="wizard_not_provided">Not provided</string>
+    <string name="wizard_review_ready">File complete and ready for submission.</string>
+    
+    <string name="wizard_success_title">Bid submitted successfully!</string>
+    <string name="wizard_success_desc">Your offer %1$s has been received, timestamped, and encrypted. A receipt will be sent via notification.</string>
+    <string name="wizard_success_timestamp">Server timestamp: %1$s</string>
+    <string name="wizard_success_btn_view">View my bids</string>
+
+    <!-- ── WIZARD HARDCODED CLEANUP ── -->
+    <string name="wizard_lot_number">Lot #%1$d</string>
+    <string name="wizard_lot_label_format">Lot %1$d – %2$s</string>
+    <string name="wizard_lot_prefix">LOT %1$s</string>
+    <string name="wizard_amount_dzd_format">%1$s DZD</string>
+    <string name="wizard_prestation_number">Service %1$d</string>
+    <string name="wizard_bpu_delete">Delete</string>
+    <string name="wizard_currency_dzd">DZD</string>
+    <string name="wizard_caution_ref_hint">e.g. CAU-2024-00892</string>
+    <string name="wizard_caution_bank_hint">Bank name</string>
+    <string name="wizard_caution_amount_hint">e.g. 1,000,000</string>
+    <string name="wizard_date_hint">DD/MM/YYYY</string>
+    <string name="wizard_ref_label_format">Ref: %1$s</string>
+
+    <!-- ── EMPTY STATE MESSAGES ── -->
+    <string name="mybids_no_results">No results found</string>
+    <string name="mybids_no_submissions">No submissions found</string>
+    <string name="settings_no_audit_logs">No audit logs found</string>
+    <string name="security_no_sessions">No active sessions found</string>
+    <string name="docs_no_documents">No documents found</string>
+
+    <!-- ── STEP INDICATOR LABELS ── -->
+    <string name="wizard_step_label_ao">Tender</string>
+    <string name="wizard_step_label_tech">Tech</string>
+    <string name="wizard_step_label_fin">Fin</string>
+    <string name="wizard_step_label_caution">Bond</string>
+    <string name="wizard_step_label_review">Review</string>
+    <string name="wizard_error_unknown">Unknown error</string>
+
+    <!-- ── HOME SCREEN ── -->
+    <string name="home_hero_prefix">The Sovereign Portal\nfor </string>
+    <string name="home_hero_highlight">Public Procurement</string>
+    <string name="home_hero_suffix"> in Algeria</string>
+    <string name="home_hero_subtitle">Access all public business opportunities in Algeria on a secure, transparent, and centralised platform.</string>
+    <string name="home_search_placeholder">Search for a tender…</string>
+    <string name="home_filter_sector">Sector</string>
+    <string name="home_filter_wilaya">Wilaya</string>
+    <string name="home_search_btn">Search →</string>
+    <string name="home_stat_active_tenders">ACTIVE TENDERS</string>
+    <string name="home_stat_awarded">AWARDED</string>
+    <string name="home_stat_operators">OPERATORS</string>
+    <string name="home_explore_title">Explore Platform</string>
+    <string name="home_shortcut_stats_title">Market Stats</string>
+    <string name="home_shortcut_stats_sub">View insights</string>
+    <string name="home_shortcut_legal_title">Legal Info</string>
+    <string name="home_shortcut_legal_sub">Law 23-12 &amp; terms</string>
+    <string name="home_shortcut_help_title">Help Center</string>
+    <string name="home_shortcut_help_sub">24/7 assistance</string>
+    <string name="home_latest_tenders">Latest Tenders</string>
+    <string name="home_view_all">View All →</string>
+    <string name="home_view_details">View Details</string>
+    <string name="home_deadline_unknown">Unknown date</string>
+    <string name="home_deadline_today">Today</string>
+    <string name="home_deadline_tomorrow">Tomorrow</string>
+    <string name="home_deadline_days">In %1$d days</string>
+    <string name="home_lots_count">%1$d lot(s)</string>
+    <string name="home_empty_tenders">No tenders available</string>
+    <string name="home_retry">Retry</string>
+    <string name="home_pillars_title">The Pillars of Al-Mizan</string>
+    <string name="home_pillars_subtitle">A sovereign infrastructure for transparent and efficient public procurement in Algeria.</string>
+    <string name="home_pillar1_title">Total Transparency</string>
+    <string name="home_pillar1_desc">Each step of the procurement process is tracked and visible to authorised parties, ensuring fair competition.</string>
+    <string name="home_pillar2_title">E2EE Security</string>
+    <string name="home_pillar2_desc">End-to-end encrypted bids and sovereign data hosting protect sensitive commercial information.</string>
+    <string name="home_pillar3_title">AI-Driven Analysis</string>
+    <string name="home_pillar3_desc">Advanced analytics and pattern detection to optimise public spending and identify market trends.</string>
+    <string name="home_filter_sector_hint">Sector…</string>
+    <string name="home_filter_wilaya_hint">Wilaya…</string>
+
+    <!-- ══ NOTIFICATIONS — add to values/strings.xml ══ -->
+    <string name="notif_title">Notifications</string>
+    <string name="notif_mark_all_read">Mark all read</string>
+    <string name="notif_empty">No notifications yet</string>
+
+    <!-- ── STATISTICS SCREEN ── -->
+    <string name="stats_title">Statistics</string>
+    <string name="stats_refresh">Refresh</string>
+    <string name="stats_back">Back</string>
+    <string name="stats_retry">Retry</string>
+    <string name="stats_section_overview">Overview</string>
+    <string name="stats_section_by_status">By Status</string>
+    <string name="stats_section_monthly">Monthly Publications</string>
+    <string name="stats_section_by_sector">By Activity Sector</string>
+    <string name="stats_section_procedure">Procedure Types</string>
+    <string name="stats_section_highlights">Highlights</string>
+    <string name="stats_label_active">Active</string>
+    <string name="stats_label_attributed">Attributed</string>
+    <string name="stats_label_expiring">Expiring &lt; 7d</string>
+    <string name="stats_label_cancelled">Cancelled</string>
+    <string name="stats_top_wilaya">Most Active Wilaya</string>
+    <string name="stats_top_wilaya_count">%1$d tenders</string>
+    <string name="stats_avg_amount">Average Estimated Amount</string>
+    <string name="stats_currency">DZD</string>
+    <string name="stats_empty_sector">No sector data</string>
+    <string name="stats_empty_procedure">No procedure data</string>
+    <string name="stats_status_publie">Published</string>
+    <string name="stats_status_en_cours">In Progress</string>
+    <string name="stats_status_ouverture_plis">Bids Opening</string>
+    <string name="stats_status_evaluation">Evaluation</string>
+    <string name="stats_status_attribue">Attributed</string>
+    <string name="stats_status_annule">Cancelled</string>
+    <string name="stats_status_cloture">Closed</string>
+</resources>
