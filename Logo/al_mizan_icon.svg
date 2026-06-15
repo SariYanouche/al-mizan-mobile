@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Modern navy gradient -->
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A6070"/>
+      <stop offset="100%" style="stop-color:#1A2B38"/>
+    </linearGradient>
+    
+    <!-- Fresh green gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#66BB6A"/>
+      <stop offset="100%" style="stop-color:#4CAF50"/>
+    </linearGradient>
+    
+    <!-- Light gradient for background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#364150"/>
+      <stop offset="100%" style="stop-color:#1A2B38"/>
+    </linearGradient>
+    
+    <!-- Subtle shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background rounded square -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle geometric pattern overlay -->
+  <g opacity="0.08">
+    <circle cx="128" cy="128" r="60" fill="none" stroke="#fff" stroke-width="1"/>
+    <circle cx="384" cy="384" r="60" fill="none" stroke="#fff" stroke-width="1"/>
+    <circle cx="384" cy="128" r="40" fill="none" stroke="#fff" stroke-width="1"/>
+    <circle cx="128" cy="384" r="40" fill="none" stroke="#fff" stroke-width="1"/>
+  </g>
+  
+  <!-- Main scale icon group -->
+  <g filter="url(#shadow)">
+    
+    <!-- Central pillar -->
+    <rect x="242" y="180" width="28" height="160" rx="6" fill="#fff"/>
+    
+    <!-- Base with elegant curve -->
+    <path d="M172 340 C172 330 200 325 256 325 C312 325 340 330 340 340 L340 355 C340 365 312 375 256 375 C200 375 172 365 172 355 Z" fill="#fff" opacity="0.95"/>
+    
+    <!-- Horizontal beam with slight curve for elegance -->
+    <path d="M90 165 C90 155 110 155 120 155 L392 155 C402 155 422 155 422 165 L422 175 C422 185 402 185 392 185 L120 185 C110 185 90 185 90 175 Z" fill="#fff"/>
+    
+    <!-- Center decorative circle -->
+    <circle cx="256" cy="170" r="28" fill="url(#greenGrad)"/>
+    <circle cx="256" cy="170" r="16" fill="#fff"/>
+    
+    <!-- Left chain links -->
+    <rect x="116" y="185" width="8" height="20" rx="4" fill="#fff"/>
+    <rect x="116" y="210" width="8" height="15" rx="4" fill="#fff" opacity="0.9"/>
+    
+    <!-- Left scale pan (bowl shape) -->
+    <ellipse cx="120" cy="240" rx="50" ry="12" fill="url(#greenGrad)"/>
+    <path d="M70 240 Q70 280 120 290 Q170 280 170 240" fill="url(#greenGrad)" opacity="0.9"/>
+    <ellipse cx="120" cy="290" rx="50" ry="12" fill="#43A047"/>
+    
+    <!-- Right chain links -->
+    <rect x="388" y="185" width="8" height="20" rx="4" fill="#fff"/>
+    <rect x="388" y="210" width="8" height="15" rx="4" fill="#fff" opacity="0.9"/>
+    
+    <!-- Right scale pan (bowl shape) -->
+    <ellipse cx="392" cy="240" rx="50" ry="12" fill="url(#greenGrad)"/>
+    <path d="M342 240 Q342 280 392 290 Q442 280 442 240" fill="url(#greenGrad)" opacity="0.9"/>
+    <ellipse cx="392" cy="290" rx="50" ry="12" fill="#43A047"/>
+    
+  </g>
+  
+  <!-- App name at bottom -->
+  <text x="256" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="bold" fill="#fff" letter-spacing="6">
+    AL-MIZAN
+  </text>
+  
+</svg>

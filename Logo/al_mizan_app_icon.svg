@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3D5A6C"/>
+      <stop offset="100%" style="stop-color:#1A2B38"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5ECC62"/>
+      <stop offset="100%" style="stop-color:#4CAF50"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- App icon background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Minimalist balanced scale -->
+  <g fill="#fff">
+    <!-- Horizontal beam -->
+    <rect x="80" y="180" width="352" height="24" rx="12"/>
+    
+    <!-- Center pivot -->
+    <circle cx="256" cy="192" r="32" fill="url(#green)"/>
+    <circle cx="256" cy="192" r="18" fill="#fff"/>
+    
+    <!-- Vertical pillar -->
+    <rect x="240" y="205" width="32" height="130" rx="6"/>
+    
+    <!-- Base -->
+    <rect x="176" y="335" width="160" height="28" rx="14"/>
+    <rect x="200" y="363" width="112" height="20" rx="10"/>
+    
+    <!-- Left chain + pan -->
+    <rect x="102" y="204" width="12" height="50" rx="6"/>
+    <ellipse cx="108" cy="270" rx="56" ry="14" fill="url(#green)"/>
+    <path d="M52 270 Q52 320 108 330 Q164 320 164 270" fill="url(#green)"/>
+    <ellipse cx="108" cy="330" rx="56" ry="14" fill="#43A047"/>
+    
+    <!-- Right chain + pan -->
+    <rect x="398" y="204" width="12" height="50" rx="6"/>
+    <ellipse cx="404" cy="270" rx="56" ry="14" fill="url(#green)"/>
+    <path d="M348 270 Q348 320 404 330 Q460 320 460 270" fill="url(#green)"/>
+    <ellipse cx="404" cy="330" rx="56" ry="14" fill="#43A047"/>
+  </g>
+  
+  <!-- Elegant M initial in center -->
+  <text x="256" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#364150">M</text>
+  
+</svg>

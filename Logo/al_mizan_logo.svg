@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Gradient for the scale beam -->
+    <linearGradient id="navyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A6070;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#364150;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for the scale pans -->
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#388E3C;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gold accent gradient -->
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Soft shadow filter -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A2B38" flood-opacity="0.25"/>
+    </filter>
+    
+    <!-- Inner glow for elegance -->
+    <filter id="innerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#F8FAFB" stroke="url(#navyGradient)" stroke-width="6"/>
+  
+  <!-- Decorative outer ring pattern -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#DDE3E8" stroke-width="2" stroke-dasharray="8,8"/>
+  
+  <!-- Main scale group with shadow -->
+  <g filter="url(#softShadow)">
+    
+    <!-- Central pillar/column -->
+    <rect x="246" y="160" width="20" height="200" rx="4" fill="url(#navyGradient)"/>
+    
+    <!-- Decorative pillar details -->
+    <rect x="242" y="180" width="28" height="8" rx="2" fill="#4A6070"/>
+    <rect x="242" y="320" width="28" height="8" rx="2" fill="#4A6070"/>
+    
+    <!-- Base platform -->
+    <path d="M176 360 L336 360 L320 390 L192 390 Z" fill="url(#navyGradient)"/>
+    <rect x="200" y="390" width="112" height="15" rx="4" fill="#1A2B38"/>
+    
+    <!-- Horizontal beam -->
+    <rect x="80" y="150" width="352" height="16" rx="8" fill="url(#navyGradient)"/>
+    
+    <!-- Center ornament/fulcrum -->
+    <circle cx="256" cy="158" r="24" fill="url(#goldAccent)" filter="url(#innerGlow)"/>
+    <circle cx="256" cy="158" r="16" fill="#364150"/>
+    <circle cx="256" cy="158" r="8" fill="url(#goldAccent)"/>
+    
+    <!-- Left scale chain -->
+    <line x1="110" y1="166" x2="110" y2="230" stroke="#364150" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="110" cy="180" r="4" fill="#4A6070"/>
+    <circle cx="110" cy="200" r="4" fill="#4A6070"/>
+    <circle cx="110" cy="220" r="4" fill="#4A6070"/>
+    
+    <!-- Left scale pan -->
+    <ellipse cx="110" cy="245" rx="55" ry="15" fill="url(#greenGradient)"/>
+    <path d="M55 245 Q55 275 110 275 Q165 275 165 245" fill="url(#greenGradient)" opacity="0.8"/>
+    <ellipse cx="110" cy="275" rx="55" ry="15" fill="#388E3C"/>
+    
+    <!-- Right scale chain -->
+    <line x1="402" y1="166" x2="402" y2="230" stroke="#364150" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="402" cy="180" r="4" fill="#4A6070"/>
+    <circle cx="402" cy="200" r="4" fill="#4A6070"/>
+    <circle cx="402" cy="220" r="4" fill="#4A6070"/>
+    
+    <!-- Right scale pan -->
+    <ellipse cx="402" cy="245" rx="55" ry="15" fill="url(#greenGradient)"/>
+    <path d="M347 245 Q347 275 402 275 Q457 275 457 245" fill="url(#greenGradient)" opacity="0.8"/>
+    <ellipse cx="402" cy="275" rx="55" ry="15" fill="#388E3C"/>
+    
+  </g>
+  
+  <!-- Arabic-inspired decorative elements -->
+  <g opacity="0.15">
+    <path d="M256 80 L266 100 L256 95 L246 100 Z" fill="#364150"/>
+    <path d="M256 430 L266 410 L256 415 L246 410 Z" fill="#364150"/>
+    <path d="M80 256 L100 246 L95 256 L100 266 Z" fill="#364150"/>
+    <path d="M432 256 L412 246 L417 256 L412 266 Z" fill="#364150"/>
+  </g>
+  
+  <!-- App name text -->
+  <text x="256" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#364150" letter-spacing="4">
+    AL-MIZAN
+  </text>
+  
+  <!-- Arabic text الميزان -->
+  <text x="256" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#364150" opacity="0.7">
+    الميزان
+  </text>
+  
+</svg>
